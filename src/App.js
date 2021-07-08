@@ -1,19 +1,23 @@
 import React from "react";
-import styled from "styled-components";
+import { ThemeProvider } from "styled-components";
+import { GlobalStyles } from "./global";
+import { theme } from "./theme";
 import Nav from "./components/Nav";
-
-// define styles
-const Title = styled.h1`
-	font-size: 50px;
-	text-align: center;
-`;
 
 const App = () => {
 	return (
-		<>
-			<Nav></Nav>
-			<Title>Test App!</Title>
-		</>
+		<ThemeProvider theme={theme}>
+			<>
+				<GlobalStyles />
+				<div>
+					<Nav></Nav>
+					<h1>Title</h1>
+				</div>
+			</>
+		</ThemeProvider>
+		// <>
+
+		// </>
 	);
 };
 

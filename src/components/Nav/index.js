@@ -1,13 +1,15 @@
 import React from "react";
 import styled from "styled-components";
 
+import Burger from "../Burger";
+
 // --- styled components ---
 
 const Header = styled.header`
 	/* box model */
 	align-items: center;
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
 	justify-content: space-between;
 	margin: 5px 1rem;
 `;
@@ -55,14 +57,15 @@ const Nav = () => {
 			<h2>
 				<Logo href="/">SM</Logo>
 			</h2>
-			<nav>
+			<Burger></Burger>
+			{/* <nav>
 				<NavBar>
 					<NavLink>About Me</NavLink>
 					<NavLink>Portfolio</NavLink>
 					<NavLink>Contact</NavLink>
 					<NavLink>Resume</NavLink>
 				</NavBar>
-			</nav>
+			</nav> */}
 		</Header>
 	);
 };
