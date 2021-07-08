@@ -1,8 +1,6 @@
 import React from "react";
 import styled from "styled-components";
 
-import Burger from "../Burger";
-
 // --- styled components ---
 
 const Header = styled.header`
@@ -57,7 +55,6 @@ const Nav = () => {
 			<h2>
 				<Logo href="/">SM</Logo>
 			</h2>
-			<Burger></Burger>
 			{/* <nav>
 				<NavBar>
 					<NavLink>About Me</NavLink>
