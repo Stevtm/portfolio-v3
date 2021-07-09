@@ -1,4 +1,6 @@
+import React from "react";
 import styled from "styled-components";
+import { bool } from "prop-types";
 
 const StyledMenu = styled.nav`
 	display: flex;
@@ -10,8 +12,8 @@ const StyledMenu = styled.nav`
 	padding: 2rem;
 	position: absolute;
 	top: 0;
-	right: 0;
-	transform: translateX(100%);
+	left: 0;
+	transform: ${({ open }) => (open ? "translateX(0)" : "translateX(-100%)")};
 	transition: transform 0.3s ease-in-out;
 
 	/* @media (max-width: ${({ theme }) => theme.mobile}) {
@@ -39,15 +41,19 @@ const StyledMenu = styled.nav`
 	}
 `;
 
-const Menu = () => {
+const Menu = ({ open }) => {
 	return (
-		<StyledMenu>
+		<StyledMenu open={open}>
 			<a href="/">About Me</a>
 			<a href="/">Portfolio</a>
 			<a href="/">Contact</a>
 			<a href="/">Resume</a>
 		</StyledMenu>
 	);
+};
+
+Menu.propTypes = {
+	open: bool.isRequired,
 };
 
 export default Menu;

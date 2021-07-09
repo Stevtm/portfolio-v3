@@ -1,10 +1,11 @@
 import React from "react";
 import styled from "styled-components";
+import { bool, func } from "prop-types";
 
 const StyledBurger = styled.button`
 	position: absolute;
 	top: 5%;
-	right: 2rem;
+	left: 2rem;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
@@ -31,14 +32,19 @@ const StyledBurger = styled.button`
 	}
 `;
 
-const Burger = () => {
+const Burger = ({ open, setOpen }) => {
 	return (
-		<StyledBurger>
+		<StyledBurger open={open} onClick={() => setOpen(!open)}>
 			<div></div>
 			<div></div>
 			<div></div>
 		</StyledBurger>
 	);
+};
+
+Burger.propTypes = {
+	open: bool.isRequired,
+	setOpen: func.isRequired,
 };
 
 export default Burger;
