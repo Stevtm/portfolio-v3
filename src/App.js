@@ -4,6 +4,7 @@ import { GlobalStyles } from "./global";
 import { theme } from "./theme";
 
 import Nav from "./components/Nav";
+import Title from "./components/Title";
 
 const App = () => {
 	return (
@@ -12,7 +13,7 @@ const App = () => {
 				<GlobalStyles />
 				<div>
 					<Nav></Nav>
-					<h1>Title</h1>
+					<Title></Title>
 				</div>
 			</>
 		</ThemeProvider>
