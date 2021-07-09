@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import RecentPic from "../../assets/images/recent-pic.jpeg";
 
 const AboutSection = styled.section`
 	/* box model */
@@ -46,8 +47,9 @@ const About = () => {
 					<li>MongoDB</li>
 					<li>MySQL</li>
 					<li>Node.js</li>
-					<li>Styled-Components</li>
+					<li>styled-components</li>
 				</ul>
+				<img src={RecentPic} alt="Steven Maddison headshot"></img>
 			</AboutContent>
 		</AboutSection>
 	);
