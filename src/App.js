@@ -5,6 +5,7 @@ import { theme } from "./theme";
 
 import Nav from "./components/Nav";
 import Title from "./components/Title";
+import About from "./components/About";
 
 const App = () => {
 	return (
@@ -14,6 +15,7 @@ const App = () => {
 				<div>
 					<Nav></Nav>
 					<Title></Title>
+					<About></About>
 				</div>
 			</>
 		</ThemeProvider>
