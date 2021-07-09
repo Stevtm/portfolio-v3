@@ -6,7 +6,7 @@ import { theme } from "./theme";
 import Nav from "./components/Nav";
 import Title from "./components/Title";
 import About from "./components/About";
-import Projects from "./components/Projects";
+import Portfolio from "./components/Portfolio";
 
 const App = () => {
 	return (
@@ -17,13 +17,10 @@ const App = () => {
 					<Nav></Nav>
 					<Title></Title>
 					<About></About>
-					<Projects></Projects>
+					<Portfolio></Portfolio>
 				</div>
 			</>
 		</ThemeProvider>
-		// <>
-
-		// </>
 	);
 };
 
