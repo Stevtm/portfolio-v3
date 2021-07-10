@@ -7,6 +7,7 @@ import Nav from "./components/Nav";
 import Title from "./components/Title";
 import About from "./components/About";
 import Portfolio from "./components/Portfolio";
+import Contact from "./components/Contact";
 
 const App = () => {
 	return (
@@ -18,6 +19,7 @@ const App = () => {
 					<Title></Title>
 					<About></About>
 					<Portfolio></Portfolio>
+					<Contact></Contact>
 				</div>
 			</>
 		</ThemeProvider>
