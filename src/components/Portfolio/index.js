@@ -23,7 +23,7 @@ const PortfolioHeader = styled.h2`
 
 const Portfolio = () => {
 	return (
-		<PortfolioSection>
+		<PortfolioSection id={"portfolio"}>
 			<PortfolioHeader>Portfolio</PortfolioHeader>
 			{portfolioInfo.map((info) => {
 				return <Project info={info} key={info.id}></Project>;

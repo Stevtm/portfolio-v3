@@ -42,8 +42,6 @@ const Icon = styled.img`
 const Project = ({ info }) => {
 	const { title, desc, tools, github, link } = info;
 
-	console.log(info);
-
 	return (
 		<ProjectContainer>
 			<ProjectHeader>{title}</ProjectHeader>

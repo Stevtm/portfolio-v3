@@ -27,7 +27,7 @@ const AboutContent = styled.div`
 
 const About = () => {
 	return (
-		<AboutSection>
+		<AboutSection id={"about"}>
 			<AboutHeader>About Me</AboutHeader>
 			<AboutContent>
 				<p>

@@ -51,14 +51,14 @@ const Submit = styled.button`
 
 const Contact = () => {
 	return (
-		<ContactSection>
+		<ContactSection id={"contact"}>
 			<ContactHeader>Contact Me</ContactHeader>
 			<ContactForm>
-				<FormLabel for="name">Name:</FormLabel>
+				<FormLabel htmlFor="name">Name:</FormLabel>
 				<InfoInput name="name" type="text"></InfoInput>
-				<FormLabel for="email">Email Address:</FormLabel>
+				<FormLabel htmlFor="email">Email Address:</FormLabel>
 				<InfoInput name="email" type="text"></InfoInput>
-				<FormLabel for="message">Message:</FormLabel>
+				<FormLabel htmlFor="message">Message:</FormLabel>
 				<MessageInput name="message"></MessageInput>
 				<Submit type="submit">Submit</Submit>
 			</ContactForm>

@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import MediaQuery from "react-responsive";
 import styled from "styled-components";
+
 import Burger from "../Burger";
 import Menu from "../Menu";
 
@@ -34,7 +35,7 @@ const NavBar = styled.ul`
 	list-style: none;
 `;
 
-const NavLink = styled.li`
+const NavTitle = styled.li`
 	/* box model */
 	padding: 5px 10px;
 
@@ -50,6 +51,14 @@ const NavLink = styled.li`
 	/* visual decorations */
 	cursor: pointer;
 	transition: all 0.2s ease-out;
+`;
+
+const NavLink = styled.a`
+	/* box model */
+
+	/* visual decorations */
+	color: black;
+	text-decoration: none;
 `;
 
 const Nav = () => {
@@ -69,10 +78,16 @@ const Nav = () => {
 			<MediaQuery minWidth={641}>
 				<nav>
 					<NavBar>
-						<NavLink>About Me</NavLink>
-						<NavLink>Portfolio</NavLink>
-						<NavLink>Contact</NavLink>
-						<NavLink>Resume</NavLink>
+						<NavTitle>
+							<NavLink href="#about">About Me</NavLink>
+						</NavTitle>
+						<NavTitle>
+							<NavLink href="#portfolio">Portfolio</NavLink>
+						</NavTitle>
+						<NavTitle>
+							<NavLink href="#contact">Contact Me</NavLink>
+						</NavTitle>
+						<NavTitle>Resume</NavTitle>
 					</NavBar>
 				</nav>
 			</MediaQuery>
