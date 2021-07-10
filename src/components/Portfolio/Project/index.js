@@ -1,43 +1,17 @@
 import React from "react";
-import styled from "styled-components";
 
 import GitHubIcon from "../../../assets/images/GitHub.png";
 import LinkIcon from "../../../assets/images/Link.png";
 
-const ProjectContainer = styled.div`
-	/* box model */
-	padding: 5px 10px;
-	margin: 20px 0;
-	width: 100%;
-
-	/* visual decorations */
-	background-color: gray;
-`;
-
-const ProjectHeader = styled.h1`
-	/* box model */
-
-	/* visual decorations */
-`;
-
-const ProjectDesc = styled.p`
-	/* box model */
-
-	/* visual decorations */
-`;
-
-const ProjectTools = styled.p`
-	/* box model */
-
-	/* visual decorations */
-`;
-
-const Link = styled.a``;
-
-const Icon = styled.img`
-	/* box model */
-	width: 35px;
-`;
+// import styled components
+import {
+	ProjectContainer,
+	ProjectHeader,
+	ProjectDesc,
+	ProjectTools,
+	Link,
+	Icon,
+} from "./styles";
 
 const Project = ({ info }) => {
 	const { title, desc, tools, github, link } = info;

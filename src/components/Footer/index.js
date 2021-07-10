@@ -1,26 +1,12 @@
 import React from "react";
-import styled from "styled-components";
 
+// import icons from assets folder
 import GitHubIcon from "../../assets/images/GitHub.png";
 import InstagramIcon from "../../assets/images/Instagram.png";
 import LinkedinIcon from "../../assets/images/LinkedIn.png";
 
-const FooterContainer = styled.div`
-	/* box model */
-	padding: 5px 10px;
-	margin: 20px 0;
-	width: 100%;
-
-	/* visual decorations */
-	background-color: ${({ theme }) => theme.secondary};
-`;
-
-const Link = styled.a``;
-
-const Icon = styled.img`
-	/* box model */
-	width: 35px;
-`;
+// import styled components
+import { FooterContainer, Link, Icon } from "./styles";
 
 const Footer = () => {
 	return (

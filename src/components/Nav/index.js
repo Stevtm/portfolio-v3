@@ -1,65 +1,11 @@
 import React, { useState } from "react";
 import MediaQuery from "react-responsive";
-import styled from "styled-components";
 
 import Burger from "../Burger";
 import Menu from "../Menu";
 
-// --- styled components ---
-
-const Header = styled.header`
-	/* box model */
-	align-items: center;
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	margin: 5px 1rem;
-`;
-
-const Logo = styled.a`
-	/* typography */
-	color: green;
-	font-size: 2.25rem;
-	line-height: 1rem;
-
-	/* visual decorations */
-	text-decoration: none;
-`;
-
-const NavBar = styled.ul`
-	/* box model */
-	display: flex;
-	flex-direction: row;
-
-	/* visual decorations */
-	list-style: none;
-`;
-
-const NavTitle = styled.li`
-	/* box model */
-	padding: 5px 10px;
-
-	/* typography */
-	color: black;
-	&:hover {
-		color: green;
-	}
-	font-weight: bold;
-	text-align: center;
-	text-transform: uppercase;
-
-	/* visual decorations */
-	cursor: pointer;
-	transition: all 0.2s ease-out;
-`;
-
-const NavLink = styled.a`
-	/* box model */
-
-	/* visual decorations */
-	color: black;
-	text-decoration: none;
-`;
+// import styled components
+import { Header, Logo, NavBar, NavTitle, NavLink } from "./styles";
 
 const Nav = () => {
 	const [openBurger, setOpenBurger] = useState(false);

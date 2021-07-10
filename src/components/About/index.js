@@ -1,29 +1,8 @@
 import React from "react";
-import styled from "styled-components";
 import RecentPic from "../../assets/images/recent-pic.jpeg";
 
-const AboutSection = styled.section`
-	/* box model */
-	padding: 20px;
-
-	/* visual decorations */
-	background-color: ${({ theme }) => theme.tertiary};
-`;
-
-const AboutHeader = styled.h2`
-	/* box model */
-	text-align: center;
-
-	/* typography */
-	font-size: 2.25rem;
-	line-height: 2.5rem;
-`;
-
-const AboutContent = styled.div`
-	/* box model */
-	display: flex;
-	flex-direction: column;
-`;
+// import styled components
+import { AboutSection, AboutHeader, AboutContent } from "./styles";
 
 const About = () => {
 	return (
