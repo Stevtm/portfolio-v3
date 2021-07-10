@@ -5,7 +5,7 @@ export const TitleSection = styled.section`
 	align-items: center;
 	display: flex;
 	flex-direction: column;
-	height: 90vh;
+	height: calc(100vh - 50px);
 	justify-content: center;
 	margin: 0 20px;
 `;
