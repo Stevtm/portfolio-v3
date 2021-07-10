@@ -22,7 +22,7 @@ export const ColorBar = styled.div`
 	margin-right: 10px;
 
 	/* visual decorations */
-	background-color: ${({ theme }) => theme.secondary};
+	background-color: ${({ theme }) => theme.pastelGreen.dark};
 `;
 
 export const Name = styled.h1`
@@ -31,7 +31,7 @@ export const Name = styled.h1`
 
 	/* typography */
 	color: ${({ theme }) => theme.secondary};
-	font-size: 3.3rem;
+	font-size: 4rem;
 	line-height: 1;
 `;
 
@@ -39,4 +39,8 @@ export const Motto = styled.h2`
 	/* box model */
 	padding-top: 20px;
 	margin: 0;
+
+	/* typography */
+	color: #5d5d5d;
+	font-size: 2rem;
 `;

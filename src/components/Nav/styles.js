@@ -13,11 +13,17 @@ export const Header = styled.header`
 export const Logo = styled.a`
 	/* typography */
 	color: green;
-	font-size: 2.25rem;
-	line-height: 1rem;
+
+	width: 40px;
 
 	/* visual decorations */
 	text-decoration: none;
+
+	@media (max-width: 640px) {
+		position: fixed;
+		top: 1.5rem;
+		left: 1.5rem;
+	}
 `;
 
 export const NavBar = styled.ul`

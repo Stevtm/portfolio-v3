@@ -3,6 +3,7 @@ import MediaQuery from "react-responsive";
 
 import Burger from "../Burger";
 import Menu from "../Menu";
+import { ReactComponent as SLogo } from "../../assets/images/Logo.svg";
 
 // import styled components
 import { Header, Logo, NavBar, NavTitle, NavLink } from "./styles";
@@ -12,9 +13,9 @@ const Nav = () => {
 
 	return (
 		<Header>
-			<h2>
-				<Logo href="/">SM</Logo>
-			</h2>
+			<Logo href="/">
+				<SLogo></SLogo>
+			</Logo>
 			<MediaQuery maxWidth={640}>
 				<div>
 					<Burger open={openBurger} setOpen={setOpenBurger}></Burger>
