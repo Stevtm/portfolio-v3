@@ -43,6 +43,12 @@ const MessageInput = styled.textarea`
 	/* visual decorations */
 `;
 
+const Submit = styled.button`
+	/* box model */
+
+	/* visual decorations */
+`;
+
 const Contact = () => {
 	return (
 		<ContactSection>
@@ -54,6 +60,7 @@ const Contact = () => {
 				<InfoInput name="email" type="text"></InfoInput>
 				<FormLabel for="message">Message:</FormLabel>
 				<MessageInput name="message"></MessageInput>
+				<Submit type="submit">Submit</Submit>
 			</ContactForm>
 		</ContactSection>
 	);

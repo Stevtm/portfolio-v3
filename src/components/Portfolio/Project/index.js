@@ -49,11 +49,11 @@ const Project = ({ info }) => {
 			<ProjectHeader>{title}</ProjectHeader>
 			<ProjectDesc>{desc}</ProjectDesc>
 			<ProjectTools>{tools}</ProjectTools>
-			<Link href={github}>
+			<Link href={github} target="_blank">
 				<Icon src={GitHubIcon}></Icon>
 			</Link>
 			{link && (
-				<Link href={link}>
+				<Link href={link} target="_blank">
 					<Icon src={LinkIcon}></Icon>
 				</Link>
 			)}
