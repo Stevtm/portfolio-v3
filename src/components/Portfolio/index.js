@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
-import Project from "../Project";
+import Project from "./Project";
 import { portfolioInfo } from "../../utils/portfolio-info";
 
 const PortfolioSection = styled.section`

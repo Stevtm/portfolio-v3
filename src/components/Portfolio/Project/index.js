@@ -1,8 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 
-import GitHubIcon from "../../assets/images/GitHub.png";
-import LinkIcon from "../../assets/images/Link.png";
+import GitHubIcon from "../../../assets/images/GitHub.png";
+import LinkIcon from "../../../assets/images/Link.png";
 
 const ProjectContainer = styled.div`
 	/* box model */
