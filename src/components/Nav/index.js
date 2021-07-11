@@ -13,17 +13,17 @@ const Nav = () => {
 
 	return (
 		<Header>
-			<Logo href="/">
-				<SLogo></SLogo>
-			</Logo>
 			<MediaQuery maxWidth={640}>
+				<Logo href="/">
+					<SLogo></SLogo>
+				</Logo>
 				<div>
 					<Burger open={openBurger} setOpen={setOpenBurger}></Burger>
 					<Menu open={openBurger} setOpen={setOpenBurger}></Menu>
 				</div>
 			</MediaQuery>
 			<MediaQuery minWidth={641}>
-				<nav>
+				<nav style={{ width: "100%" }}>
 					<NavBar>
 						<NavTitle>
 							<NavLink href="#about">About Me</NavLink>
@@ -32,9 +32,11 @@ const Nav = () => {
 							<NavLink href="#portfolio">Portfolio</NavLink>
 						</NavTitle>
 						<NavTitle>
+							<NavLink href="#resume">Résumé</NavLink>
+						</NavTitle>
+						<NavTitle>
 							<NavLink href="#contact">Contact Me</NavLink>
 						</NavTitle>
-						<NavTitle>Resume</NavTitle>
 					</NavBar>
 				</nav>
 			</MediaQuery>

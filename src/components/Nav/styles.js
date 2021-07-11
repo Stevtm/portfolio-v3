@@ -5,9 +5,12 @@ export const Header = styled.header`
 	align-items: center;
 	display: flex;
 	flex-direction: row;
-	height: 40px;
-	justify-content: space-between;
-	margin: 5px 1rem;
+	margin: 0;
+	position: fixed;
+	width: 100%;
+	background-color: whitesmoke;
+	border-bottom: 2px solid grey;
+	/* backdrop-filter: blur(20px); */
 `;
 
 export const Logo = styled.a`
@@ -28,8 +31,13 @@ export const Logo = styled.a`
 
 export const NavBar = styled.ul`
 	/* box model */
+	align-items: center;
 	display: flex;
 	flex-direction: row;
+	justify-content: space-around;
+	padding: 0;
+	margin: 0;
+	width: 50%;
 
 	/* visual decorations */
 	list-style: none;
@@ -37,16 +45,15 @@ export const NavBar = styled.ul`
 
 export const NavTitle = styled.li`
 	/* box model */
-	padding: 5px 10px;
+	padding: 5px 5px;
+	margin: 8px 0;
 
 	/* typography */
 	color: black;
-	&:hover {
-		color: green;
-	}
-	font-weight: bold;
+	font-size: 1rem;
+	font-weight: 500;
+	line-height: 1.5rem;
 	text-align: center;
-	text-transform: uppercase;
 
 	/* visual decorations */
 	cursor: pointer;
@@ -54,9 +61,11 @@ export const NavTitle = styled.li`
 `;
 
 export const NavLink = styled.a`
-	/* box model */
-
 	/* visual decorations */
-	color: black;
+	color: ${({ theme }) => theme.secondary};
 	text-decoration: none;
+
+	&:hover {
+		color: black;
+	}
 `;

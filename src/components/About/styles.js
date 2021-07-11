@@ -6,6 +6,10 @@ export const AboutSection = styled.section`
 
 	/* visual decorations */
 	background-color: ${({ theme }) => theme.pastelBlue.light};
+
+	@media (min-width: 641px) {
+		padding-top: 60px;
+	}
 `;
 
 export const ColorBar = styled.div`

@@ -25,7 +25,7 @@ import {
 
 const Resume = () => {
 	return (
-		<ResumeSection>
+		<ResumeSection id={"resume"}>
 			<ResumeHeader>
 				<ColorBar></ColorBar>
 				<HeaderText>Résumé</HeaderText>
