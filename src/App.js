@@ -6,6 +6,7 @@ import { theme } from "./theme";
 import MediaQuery from "react-responsive";
 
 import Nav from "./components/Nav";
+import { Logo } from "./components/Nav/styles";
 import Title from "./components/Title";
 import About from "./components/About";
 import Portfolio from "./components/Portfolio";
@@ -29,7 +30,7 @@ const App = () => {
 		<ThemeProvider theme={theme}>
 			<>
 				<GlobalStyles />
-				<MediaQuery maxWidth={640}>
+				<MediaQuery maxWidth={670}>
 					<Nav></Nav>
 					<Title></Title>
 					<About></About>
@@ -38,7 +39,7 @@ const App = () => {
 					<Contact></Contact>
 					<Footer></Footer>
 				</MediaQuery>
-				<MediaQuery minWidth={641}>
+				<MediaQuery minWidth={671}>
 					<Grid>
 						<Title></Title>
 						<Content>

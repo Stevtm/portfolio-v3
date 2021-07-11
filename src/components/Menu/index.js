@@ -13,11 +13,11 @@ const Menu = ({ open, setOpen }) => {
 			<a href="#portfolio" onClick={() => setOpen(false)}>
 				Portfolio
 			</a>
+			<a href="#resume" onClick={() => setOpen(false)}>
+				Résumé
+			</a>
 			<a href="#contact" onClick={() => setOpen(false)}>
 				Contact
-			</a>
-			<a href="/" onClick={() => setOpen(false)}>
-				Resume
 			</a>
 		</StyledMenu>
 	);

@@ -6,23 +6,32 @@ import Menu from "../Menu";
 import { ReactComponent as SLogo } from "../../assets/images/Logo.svg";
 
 // import styled components
-import { Header, Logo, NavBar, NavTitle, NavLink } from "./styles";
+import {
+	Header,
+	CollapsedContainer,
+	Logo,
+	NavBar,
+	NavTitle,
+	NavLink,
+} from "./styles";
 
 const Nav = () => {
 	const [openBurger, setOpenBurger] = useState(false);
 
 	return (
 		<Header>
-			<MediaQuery maxWidth={640}>
-				<Logo href="/">
-					<SLogo></SLogo>
-				</Logo>
-				<div>
-					<Burger open={openBurger} setOpen={setOpenBurger}></Burger>
-					<Menu open={openBurger} setOpen={setOpenBurger}></Menu>
-				</div>
+			<MediaQuery maxWidth={670}>
+				<CollapsedContainer>
+					<Logo href="/">
+						<SLogo></SLogo>
+					</Logo>
+					<div>
+						<Burger open={openBurger} setOpen={setOpenBurger}></Burger>
+						<Menu open={openBurger} setOpen={setOpenBurger}></Menu>
+					</div>
+				</CollapsedContainer>
 			</MediaQuery>
-			<MediaQuery minWidth={641}>
+			<MediaQuery minWidth={671}>
 				<nav style={{ width: "100%" }}>
 					<NavBar>
 						<NavTitle>

@@ -4,7 +4,7 @@ export const StyledMenu = styled.nav`
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	background: ${({ theme }) => theme.secondary};
+	background: whitesmoke;
 	height: 100vh;
 	width: 100%;
 	text-align: center;
@@ -26,7 +26,7 @@ export const StyledMenu = styled.nav`
 		padding: 2rem 0;
 		font-weight: bold;
 		letter-spacing: 0.5rem;
-		color: ${({ theme }) => theme.tertiary};
+		color: ${({ theme }) => theme.secondary};
 		text-decoration: none;
 		transition: color 0.3s linear;
 

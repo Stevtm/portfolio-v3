@@ -8,23 +8,35 @@ export const Header = styled.header`
 	margin: 0;
 	position: fixed;
 	width: 100%;
+
+	@media (min-width: 671px) {
+		background-color: whitesmoke;
+		border-bottom: 2px solid grey;
+	}
+`;
+
+export const CollapsedContainer = styled.div`
+	/* box model */
+	height: 8.5rem;
+	width: 100%;
 	background-color: whitesmoke;
 	border-bottom: 2px solid grey;
-	/* backdrop-filter: blur(20px); */
+	/* background-blend-mode: blur(20px); */
+	position: fixed;
 `;
 
 export const Logo = styled.a`
 	/* typography */
 	color: green;
 
-	width: 40px;
+	width: 2.2rem;
 
 	/* visual decorations */
 	text-decoration: none;
 
-	@media (max-width: 640px) {
+	@media (max-width: 671px) {
 		position: fixed;
-		top: 1.5rem;
+		top: 1rem;
 		left: 1.5rem;
 	}
 `;
