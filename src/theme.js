@@ -25,8 +25,8 @@ export const theme = {
 		DEFAULT: "#0D1321",
 	},
 	prussianBlue: {
-		light: "#606C7C",
-		DEFAULT: "#1D2D44",
-		dark: "#141F2F",
+		light: "#B4B5BE",
+		DEFAULT: "#606C7C",
+		dark: "#1D2D44",
 	},
 };
