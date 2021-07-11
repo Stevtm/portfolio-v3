@@ -16,16 +16,17 @@ export const theme = {
 		dark: "#6d7b71",
 	},
 	pastelPurple: {
-		light: "#bcb1c0",
+		light: "#d0c8d2",
 		DEFAULT: "#A090A5",
 		dark: "#706473",
+		darker: "#59505c",
 	},
 	richBlack: {
 		DEFAULT: "#0D1321",
 	},
 	prussianBlue: {
-		light: "606C7C",
+		light: "#606C7C",
 		DEFAULT: "#1D2D44",
-		dark: "141F2F",
+		dark: "#141F2F",
 	},
 };

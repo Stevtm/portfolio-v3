@@ -4,6 +4,8 @@ import React from "react";
 import {
 	ContactSection,
 	ContactHeader,
+	ColorBar,
+	HeaderText,
 	ContactForm,
 	FormLabel,
 	InfoInput,
@@ -14,7 +16,10 @@ import {
 const Contact = () => {
 	return (
 		<ContactSection id={"contact"}>
-			<ContactHeader>Contact Me</ContactHeader>
+			<ContactHeader>
+				<ColorBar></ColorBar>
+				<HeaderText>Contact Me</HeaderText>
+			</ContactHeader>
 			<ContactForm>
 				<FormLabel htmlFor="name">Name:</FormLabel>
 				<InfoInput name="name" type="text"></InfoInput>

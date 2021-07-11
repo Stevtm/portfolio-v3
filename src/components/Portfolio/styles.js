@@ -17,7 +17,7 @@ export const ColorBar = styled.div`
 	background-color: ${({ theme }) => theme.pastelGreen.dark};
 `;
 
-export const PortfolioHeader = styled.h2`
+export const PortfolioHeader = styled.div`
 	/* box model */
 	display: flex;
 	flex-direction: row;
