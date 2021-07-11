@@ -3,10 +3,12 @@ export const theme = {
 	secondary: "#545c52",
 	tertiary: "#c4745a",
 	quaternary: "#dedbd2",
+	darkGray: "#5d5d5d",
 	pastelBlue: {
-		light: "#b2bec7",
+		light: "#c9d1d7",
 		DEFAULT: "#91a3b0",
-		dark: "#65727b",
+		dark: "#65727B",
+		darker: "#464F56",
 	},
 	pastelGreen: {
 		light: "#b9c8bd",

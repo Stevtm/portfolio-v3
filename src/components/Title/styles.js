@@ -41,6 +41,6 @@ export const Motto = styled.h2`
 	margin: 0;
 
 	/* typography */
-	color: #5d5d5d;
+	color: ${({ theme }) => theme.darkGray};
 	font-size: 2rem;
 `;
