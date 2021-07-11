@@ -40,9 +40,11 @@ const Project = ({ info }) => {
 			<ColorBar></ColorBar>
 			<ProjectContent>
 				<ProjectDesc>{desc}</ProjectDesc>
-				{tools.map((tool) => {
-					return <Tool info={tool} key={tool.id}></Tool>;
-				})}
+				<ProjectTools>
+					{tools.map((tool) => {
+						return <Tool info={tool} key={tool.id}></Tool>;
+					})}
+				</ProjectTools>
 			</ProjectContent>
 		</ProjectContainer>
 	);

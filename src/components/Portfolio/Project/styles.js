@@ -56,7 +56,7 @@ export const ProjectContent = styled.div`
 
 export const ProjectDesc = styled.p`
 	/* box model */
-	margin: 0;
+	margin: 10px 0;
 
 	/* typography */
 	font-size: 1.2rem;
@@ -64,9 +64,13 @@ export const ProjectDesc = styled.p`
 	/* visual decorations */
 `;
 
-export const ProjectTools = styled.p`
+export const ProjectTools = styled.div`
 	/* box model */
-	margin: 20px 0 0 0;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	margin: 10px 0;
+
 	/* visual decorations */
 `;
 
@@ -75,5 +79,5 @@ export const Link = styled.a``;
 export const Icon = styled.img`
 	/* box model */
 	margin: 0 5px;
-	width: 28px;
+	width: 25px;
 `;
