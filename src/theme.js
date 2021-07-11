@@ -11,7 +11,7 @@ export const theme = {
 		darker: "#464F56",
 	},
 	pastelGreen: {
-		light: "#b9c8bd",
+		light: "#c7d3ca",
 		DEFAULT: "#9cb1a2",
 		dark: "#6d7b71",
 	},

@@ -4,12 +4,20 @@ import Project from "./Project";
 import { portfolioInfo } from "../../utils/portfolio-info";
 
 // import styled components
-import { PortfolioHeader, PortfolioSection } from "./styles";
+import {
+	PortfolioHeader,
+	PortfolioSection,
+	ColorBar,
+	HeaderText,
+} from "./styles";
 
 const Portfolio = () => {
 	return (
 		<PortfolioSection id={"portfolio"}>
-			<PortfolioHeader>Portfolio</PortfolioHeader>
+			<PortfolioHeader>
+				<ColorBar></ColorBar>
+				<HeaderText>Portfolio</HeaderText>
+			</PortfolioHeader>
 			{portfolioInfo.map((info) => {
 				return <Project info={info} key={info.id}></Project>;
 			})}
