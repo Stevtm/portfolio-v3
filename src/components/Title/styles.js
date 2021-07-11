@@ -14,11 +14,12 @@ export const TitleContainer = styled.div`
 	/* box model */
 	display: flex;
 	flex-direction: row;
+	justify-content: flex-start;
 `;
 
 export const ColorBar = styled.div`
 	/* box model */
-	width: 10px;
+	width: 1rem;
 	margin-right: 10px;
 
 	/* visual decorations */
@@ -30,9 +31,14 @@ export const Name = styled.h1`
 	margin: 0;
 
 	/* typography */
-	color: ${({ theme }) => theme.secondary};
-	font-size: 4rem;
+	color: black;
+	font-size: 4.5rem;
+	font-weight: 400;
 	line-height: 1;
+
+	span {
+		color: ${({ theme }) => theme.secondary};
+	}
 `;
 
 export const Motto = styled.h2`
@@ -42,5 +48,7 @@ export const Motto = styled.h2`
 
 	/* typography */
 	color: ${({ theme }) => theme.darkGray};
-	font-size: 2rem;
+	font-size: 1.875rem;
+	font-weight: 400;
+	line-height: 2.25rem;
 `;

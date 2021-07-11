@@ -8,6 +8,8 @@ export const ToolBubble = styled.div`
 
 	/* typography */
 	color: white;
+	font-size: 0.875rem;
+	line-height: 1.25rem;
 
 	/* visual decorations */
 	background-color: ${({ theme }) => theme.secondary};

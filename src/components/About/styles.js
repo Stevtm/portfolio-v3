@@ -10,7 +10,7 @@ export const AboutSection = styled.section`
 
 export const ColorBar = styled.div`
 	/* box model */
-	width: 10px;
+	width: 0.45rem;
 	margin-right: 10px;
 
 	/* visual decorations */
@@ -31,9 +31,9 @@ export const HeaderText = styled.h2`
 
 	/* typography */
 	color: ${({ theme }) => theme.pastelBlue.darker};
-	font-size: 2.5rem;
+	font-size: 2.25rem;
+	font-weight: 400;
 	line-height: 2.5rem;
-	/* text-transform: uppercase; */
 `;
 
 export const AboutContent = styled.div`
@@ -49,7 +49,8 @@ export const AboutText = styled.p`
 	width: 100%;
 
 	/* typography */
-	font-size: 1.5rem;
+	font-size: 1.125rem;
+	line-height: 1.75rem;
 `;
 
 export const ProfilePic = styled.img`

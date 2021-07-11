@@ -10,7 +10,7 @@ export const PortfolioSection = styled.section`
 
 export const ColorBar = styled.div`
 	/* box model */
-	width: 10px;
+	width: 0.45rem;
 	margin-right: 10px;
 
 	/* visual decorations */
@@ -31,7 +31,7 @@ export const HeaderText = styled.h2`
 
 	/* typography */
 	color: ${({ theme }) => theme.secondary};
-	font-size: 2.5rem;
+	font-size: 2.25rem;
+	font-weight: 400;
 	line-height: 2.5rem;
-	/* text-transform: uppercase; */
 `;

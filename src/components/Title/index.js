@@ -14,9 +14,7 @@ const Title = () => {
 						<span>Maddison</span>
 					</Name>
 					<Motto>
-						Full Stack Developer.<br></br>
-						Engineering Grad.<br></br>
-						Lifelong Learner.
+						Full Stack Developer. Engineering Graduate. Lifelong Learner.
 					</Motto>
 				</div>
 			</TitleContainer>

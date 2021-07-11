@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import TLNT from "../../../assets/images/TLNT-min.png";
 
 export const ProjectContainer = styled.div`
 	/* box model */
@@ -8,9 +7,6 @@ export const ProjectContainer = styled.div`
 	padding: 5px 0;
 	margin: 20px 0;
 	width: 100%;
-
-	/* visual decorations */
-	/* background-color : white; */
 `;
 
 export const ProjectHeader = styled.div`
@@ -21,8 +17,6 @@ export const ProjectHeader = styled.div`
 	justify-content: space-between;
 	padding: 10px;
 	margin: 0;
-
-	/* visual decorations */
 `;
 
 export const ProjectTitle = styled.h1`
@@ -30,7 +24,10 @@ export const ProjectTitle = styled.h1`
 	margin: 0;
 
 	/* typography */
-	font-size: 1.6rem;
+	font-size: 1.5rem;
+	font-weight: 500;
+	font-size: 1.875rem;
+	line-height: 2.25rem;
 `;
 
 export const Icons = styled.div``;
@@ -59,9 +56,8 @@ export const ProjectDesc = styled.p`
 	margin: 10px 0;
 
 	/* typography */
-	font-size: 1.2rem;
-
-	/* visual decorations */
+	font-size: 1.125rem;
+	line-height: 1.75rem;
 `;
 
 export const ProjectTools = styled.div`

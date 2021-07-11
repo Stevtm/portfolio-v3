@@ -27,7 +27,7 @@ const Contact = () => {
 				<InfoInput name="email" type="text"></InfoInput>
 				<FormLabel htmlFor="message">Message:</FormLabel>
 				<MessageInput name="message"></MessageInput>
-				<Submit type="submit">Submit</Submit>
+				<Submit type="submit">Send Email</Submit>
 			</ContactForm>
 		</ContactSection>
 	);

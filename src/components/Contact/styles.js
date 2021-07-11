@@ -18,7 +18,7 @@ export const ContactHeader = styled.div`
 
 export const ColorBar = styled.div`
 	/* box model */
-	width: 10px;
+	width: 0.45rem;
 	margin-right: 10px;
 
 	/* visual decorations */
@@ -31,17 +31,15 @@ export const HeaderText = styled.h2`
 
 	/* typography */
 	color: ${({ theme }) => theme.pastelPurple.darker};
-	font-size: 2.5rem;
+	font-size: 2.25rem;
+	font-weight: 400;
 	line-height: 2.5rem;
-	/* text-transform: uppercase; */
 `;
 
 export const ContactForm = styled.form`
 	/* box model */
 	display: flex;
 	flex-direction: column;
-
-	/* visual decorations */
 `;
 
 export const FormLabel = styled.label`
@@ -49,9 +47,8 @@ export const FormLabel = styled.label`
 	margin: 5px 0;
 
 	/* typography */
-	font-size: 1.2rem;
-
-	/* visual decorations */
+	font-size: 1.125rem;
+	line-height: 1.75rem;
 `;
 
 export const InfoInput = styled.input`
@@ -61,9 +58,8 @@ export const InfoInput = styled.input`
 	border: 1px solid black;
 
 	/* typography */
-	font-size: 1.2rem;
-
-	/* visual decorations */
+	font-size: 1.125rem;
+	line-height: 1.75rem;
 `;
 
 export const MessageInput = styled.textarea`
@@ -75,22 +71,21 @@ export const MessageInput = styled.textarea`
 
 	/* typography */
 	font-family: inherit;
-	font-size: 1.2rem;
-
-	/* visual decorations */
+	font-size: 1.125rem;
+	line-height: 1.75rem;
 `;
 
 export const Submit = styled.button`
 	/* box model */
 	border: none;
 	border-radius: 5px;
-	padding: 8px 5px;
+	padding: 8px 8px;
 	margin: 0 auto;
-	width: 80px;
 
 	/* typography */
 	color: white;
-	font-size: 1.2rem;
+	font-size: 1.125rem;
+	line-height: 1.75rem;
 
 	/* visual decorations */
 	background-color: ${({ theme }) => theme.pastelPurple.darker};

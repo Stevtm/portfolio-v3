@@ -20,7 +20,7 @@ export const ResumeHeader = styled.div`
 
 export const ColorBar = styled.div`
 	/* box model */
-	width: 10px;
+	width: 0.45rem;
 	margin-right: 10px;
 
 	/* visual decorations */
@@ -33,30 +33,28 @@ export const HeaderText = styled.h2`
 
 	/* typography */
 	color: ${({ theme }) => theme.prussianBlue.dark};
-	font-size: 2.5rem;
+	font-size: 2.25rem;
+	font-weight: 400;
 	line-height: 2.5rem;
-	/* text-transform: uppercase; */
 `;
 
 export const ResumeText = styled.h3`
-	/* box model */
-
 	/* typography */
-	font-weight: normal;
-
-	/* visual decorations */
+	font-size: 1.125rem;
+	line-height: 1.75rem;
+	font-weight: 400;
 `;
 
 export const TechHeader = styled.h4`
 	/* box model */
 	border-bottom: 5px solid ${({ theme }) => theme.prussianBlue.dark};
 	padding: 10px;
-	margin: 0;
+	margin: 0 auto;
 
 	/* typography */
-	font-size: 1.6rem;
-
-	/* visual decorations */
+	font-size: 1.5rem;
+	font-weight: 500;
+	line-height: 2rem;
 `;
 
 export const Icons = styled.div`
@@ -80,24 +78,6 @@ export const Icons = styled.div`
 	}
 `;
 
-export const ToolsList = styled.ul`
-	/* box model */
-
-	/* typography */
-	font-size: 1.2rem;
-
-	/* visual decorations */
-	list-style-type: armenian;
-`;
-
-export const Tool = styled.li`
-	/* box model */
-
-	/* typography */
-
-	/* visual decorations */
-`;
-
 export const ResumeButton = styled.button`
 	/* box model */
 	border: none;
@@ -108,7 +88,8 @@ export const ResumeButton = styled.button`
 
 	/* typography */
 	color: white;
-	font-size: 1.2rem;
+	font-size: 1.125rem;
+	line-height: 1.75rem;
 
 	/* visual decorations */
 	background-color: ${({ theme }) => theme.prussianBlue.dark};

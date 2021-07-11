@@ -9,8 +9,6 @@ import {
 	ResumeText,
 	TechHeader,
 	Icons,
-	ToolsList,
-	Tool,
 	ResumeButton,
 } from "./styles";
 
@@ -51,13 +49,6 @@ const Resume = () => {
 				<SiGraphql></SiGraphql>
 				<SiJest></SiJest>
 			</Icons>
-			{/* <TechHeader>Tools</TechHeader>
-			<ToolsList>
-				<Tool>Git</Tool>
-				<li>Command Line</li>
-				<li>Chrome DevTools</li>
-				<li>Insomnia/Postman</li>
-			</ToolsList> */}
 			<ResumeButton>Download My Full Résumé</ResumeButton>
 		</ResumeSection>
 	);
