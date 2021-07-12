@@ -57,6 +57,7 @@ export const NavBar = styled.ul`
 
 export const NavTitle = styled.li`
 	/* box model */
+	border-radius: 10px;
 	padding: 5px 5px;
 	margin: 8px 0;
 
@@ -70,14 +71,18 @@ export const NavTitle = styled.li`
 	/* visual decorations */
 	cursor: pointer;
 	transition: all 0.2s ease-out;
+
+	&:hover {
+		background-color: ${({ theme }) => theme.secondary};
+
+		a {
+			color: white;
+		}
+	}
 `;
 
 export const NavLink = styled.a`
 	/* visual decorations */
 	color: ${({ theme }) => theme.secondary};
 	text-decoration: none;
-
-	&:hover {
-		color: black;
-	}
 `;

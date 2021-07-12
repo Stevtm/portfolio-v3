@@ -110,4 +110,10 @@ export const Submit = styled.button`
 
 	/* visual decorations */
 	background-color: ${({ theme }) => theme.pastelPurple.darker};
+	cursor: pointer;
+	transition: 0.2s all;
+
+	&:hover {
+		background-color: ${({ theme }) => theme.pastelPurple.DEFAULT};
+	}
 `;

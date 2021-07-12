@@ -1,9 +1,10 @@
 import React from "react";
 
-import GitHubIcon from "../../../assets/images/GitHub.png";
-import LinkIcon from "../../../assets/images/Link.png";
-
 import Tool from "./Tool";
+
+// import icons
+import { FaGithub } from "react-icons/fa";
+import { BiLinkExternal } from "react-icons/bi";
 
 // import styled components
 import {
@@ -16,7 +17,6 @@ import {
 	ProjectDesc,
 	ProjectTools,
 	Link,
-	Icon,
 } from "./styles";
 
 const Project = ({ info }) => {
@@ -28,11 +28,11 @@ const Project = ({ info }) => {
 				<ProjectTitle>{title}</ProjectTitle>
 				<Icons>
 					<Link href={github} target="_blank">
-						<Icon src={GitHubIcon}></Icon>
+						<FaGithub></FaGithub>
 					</Link>
 					{link && (
 						<Link href={link} target="_blank">
-							<Icon src={LinkIcon}></Icon>
+							<BiLinkExternal></BiLinkExternal>
 						</Link>
 					)}
 				</Icons>

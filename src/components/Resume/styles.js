@@ -120,6 +120,12 @@ export const ResumeButton = styled.button`
 
 	/* visual decorations */
 	background-color: ${({ theme }) => theme.prussianBlue.dark};
+	cursor: pointer;
+	transition: 0.2s all;
+
+	&:hover {
+		background-color: ${({ theme }) => theme.prussianBlue.DEFAULT};
+	}
 `;
 
 export const ResumeLink = styled.a`

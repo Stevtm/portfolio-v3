@@ -70,10 +70,15 @@ export const ProjectTools = styled.div`
 	/* visual decorations */
 `;
 
-export const Link = styled.a``;
-
-export const Icon = styled.img`
+export const Link = styled.a`
 	/* box model */
 	margin: 0 5px;
-	width: 25px;
+
+	/* typography */
+	color: black;
+
+	svg {
+		/* typography */
+		font-size: 30px;
+	}
 `;
