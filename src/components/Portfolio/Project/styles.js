@@ -80,5 +80,13 @@ export const Link = styled.a`
 	svg {
 		/* typography */
 		font-size: 30px;
+
+		/* visual decorations */
+		transition: 0.2s all ease-in-out;
+
+		&:hover {
+			/* typography */
+			color: white;
+		}
 	}
 `;

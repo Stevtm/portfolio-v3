@@ -9,7 +9,7 @@ export const FooterContainer = styled.div`
 	width: 100%;
 
 	/* visual decorations */
-	background-color: ${({ theme }) => theme.secondary};
+	background-color: ${({ theme }) => theme.pastelGreen.light};
 `;
 
 export const Links = styled.div`
@@ -27,21 +27,24 @@ export const Link = styled.a`
 	/* typography */
 	font-size: 2rem;
 
-	/* visual decorations */
-
 	svg {
+		/* typography */
+		color: black;
+
 		/* visual decorations */
-		color: white;
+		transition: 0.2s all ease-in-out;
+
+		&:hover {
+			color: white;
+		}
 	}
 `;
 
 export const Copyright = styled.p`
 	/* box model */
 	margin: 0;
-	padding: 0;
+	padding: 4px 0;
 
 	/* typography */
-	color: white;
-
-	/* visual decorations */
+	color: black;
 `;
