@@ -1,4 +1,5 @@
 import React from "react";
+import ResumePDF from "../../assets/documents/Resume 2019.pdf";
 
 // import styled components
 import {
@@ -13,6 +14,7 @@ import {
 	TechHeader,
 	Icons,
 	ResumeButton,
+	ResumeLink,
 } from "./styles";
 
 // import icons
@@ -60,7 +62,11 @@ const Resume = () => {
 						</Icons>
 					</TechStack>
 				</TechContainer>
-				<ResumeButton>Download My Full Résumé</ResumeButton>
+				<ResumeButton>
+					<ResumeLink href={ResumePDF} target="_blank">
+						Download My Full Résumé
+					</ResumeLink>
+				</ResumeButton>
 			</ResumeSection>
 		</>
 	);

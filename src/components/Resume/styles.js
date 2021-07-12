@@ -121,3 +121,9 @@ export const ResumeButton = styled.button`
 	/* visual decorations */
 	background-color: ${({ theme }) => theme.prussianBlue.dark};
 `;
+
+export const ResumeLink = styled.a`
+	/* typography */
+	text-decoration: none;
+	color: white;
+`;
