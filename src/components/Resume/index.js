@@ -2,6 +2,7 @@ import React from "react";
 
 // import styled components
 import {
+	Anchor,
 	ResumeSection,
 	ResumeHeader,
 	ColorBar,
@@ -25,32 +26,35 @@ import {
 
 const Resume = () => {
 	return (
-		<ResumeSection id={"resume"}>
-			<ResumeHeader>
-				<ColorBar></ColorBar>
-				<HeaderText>Résumé</HeaderText>
-			</ResumeHeader>
-			<ResumeText>
-				These are some of the technologies I've been working with recently:
-			</ResumeText>
-			<TechHeader>Front-End</TechHeader>
-			<Icons>
-				<FaReact></FaReact>
-				<FaCss3></FaCss3>
-				<FaHtml5></FaHtml5>
-				<SiTailwindcss></SiTailwindcss>
-				<SiJquery></SiJquery>
-			</Icons>
-			<TechHeader>Back-End</TechHeader>
-			<Icons>
-				<FaNodeJs></FaNodeJs>
-				<SiMongodb></SiMongodb>
-				<SiMysql></SiMysql>
-				<SiGraphql></SiGraphql>
-				<SiJest></SiJest>
-			</Icons>
-			<ResumeButton>Download My Full Résumé</ResumeButton>
-		</ResumeSection>
+		<>
+			<Anchor id={"resume"}></Anchor>
+			<ResumeSection>
+				<ResumeHeader>
+					<ColorBar></ColorBar>
+					<HeaderText>Résumé</HeaderText>
+				</ResumeHeader>
+				<ResumeText>
+					These are some of the technologies I've been working with recently:
+				</ResumeText>
+				<TechHeader>Front-End</TechHeader>
+				<Icons>
+					<FaReact></FaReact>
+					<FaCss3></FaCss3>
+					<FaHtml5></FaHtml5>
+					<SiTailwindcss></SiTailwindcss>
+					<SiJquery></SiJquery>
+				</Icons>
+				<TechHeader>Back-End</TechHeader>
+				<Icons>
+					<FaNodeJs></FaNodeJs>
+					<SiMongodb></SiMongodb>
+					<SiMysql></SiMysql>
+					<SiGraphql></SiGraphql>
+					<SiJest></SiJest>
+				</Icons>
+				<ResumeButton>Download My Full Résumé</ResumeButton>
+			</ResumeSection>
+		</>
 	);
 };
 

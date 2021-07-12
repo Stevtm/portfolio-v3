@@ -5,6 +5,7 @@ import { portfolioInfo } from "../../utils/portfolio-info";
 
 // import styled components
 import {
+	Anchor,
 	PortfolioHeader,
 	PortfolioSection,
 	ColorBar,
@@ -13,15 +14,18 @@ import {
 
 const Portfolio = () => {
 	return (
-		<PortfolioSection id={"portfolio"}>
-			<PortfolioHeader>
-				<ColorBar></ColorBar>
-				<HeaderText>Portfolio</HeaderText>
-			</PortfolioHeader>
-			{portfolioInfo.map((info) => {
-				return <Project info={info} key={info.id}></Project>;
-			})}
-		</PortfolioSection>
+		<>
+			<Anchor id={"portfolio"}></Anchor>
+			<PortfolioSection>
+				<PortfolioHeader>
+					<ColorBar></ColorBar>
+					<HeaderText>Portfolio</HeaderText>
+				</PortfolioHeader>
+				{portfolioInfo.map((info) => {
+					return <Project info={info} key={info.id}></Project>;
+				})}
+			</PortfolioSection>
+		</>
 	);
 };
 

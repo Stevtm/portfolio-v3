@@ -1,5 +1,13 @@
 import styled from "styled-components";
 
+export const Anchor = styled.span`
+	/* box model */
+	display: block;
+	height: calc(40px);
+	margin-top: -40px;
+	visibility: hidden;
+`;
+
 export const AboutSection = styled.section`
 	/* box model */
 	padding: 20px;
