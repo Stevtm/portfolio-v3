@@ -53,6 +53,10 @@ export const AboutContent = styled.div`
 	align-items: center;
 	display: flex;
 	flex-direction: column;
+
+	@media (min-width: 1281px) {
+		flex-direction: row;
+	}
 `;
 
 export const AboutText = styled.p`
@@ -69,6 +73,7 @@ export const ProfilePic = styled.img`
 	/* box model */
 	margin: 10px 0;
 	width: 80%;
+	max-width: 300px;
 
 	/* visual decorations */
 	border-radius: 100%;

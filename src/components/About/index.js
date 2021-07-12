@@ -23,19 +23,20 @@ const About = () => {
 					<HeaderText>About Me</HeaderText>
 				</AboutHeader>
 				<AboutContent>
-					<AboutText>Hi! I'm Steven.</AboutText>
-					<AboutText>
-						I'm a full stack web developer who is passionate about solving
-						problems and building visually appealing, responsive, and functional
-						web applications. I love programming because it lets me solve
-						problems.
-					</AboutText>
-					<AboutText>
-						Whether it's creating a web app to log my workout data or using code
-						to perform biomechanical analysis, I look forward to taking a
-						challenge and solving it.
-					</AboutText>
-
+					<div>
+						<AboutText>Hi! I'm Steven.</AboutText>
+						<AboutText>
+							I'm a full stack web developer who is passionate about solving
+							problems and building visually appealing, responsive, and
+							functional web applications. I love programming because it lets me
+							solve problems.
+						</AboutText>
+						<AboutText>
+							Whether it's creating a web app to log my workout data or using
+							code to perform biomechanical analysis, I look forward to taking a
+							challenge and solving it.
+						</AboutText>
+					</div>
 					<ProfilePic
 						src={RecentPic}
 						alt="Steven Maddison headshot"

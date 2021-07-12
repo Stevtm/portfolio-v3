@@ -53,6 +53,24 @@ export const ResumeText = styled.h3`
 	font-weight: 400;
 `;
 
+export const TechContainer = styled.div`
+	/* box model */
+	display: flex;
+	flex-direction: column;
+	margin: 0 auto;
+
+	@media (min-width: 1025px) {
+		flex-direction: row;
+	}
+`;
+
+export const TechStack = styled.div`
+	/* box model */
+	@media (min-width: 1025px) {
+		margin: 20px;
+	}
+`;
+
 export const TechHeader = styled.h4`
 	/* box model */
 	border-bottom: 5px solid ${({ theme }) => theme.prussianBlue.dark};
@@ -63,6 +81,7 @@ export const TechHeader = styled.h4`
 	font-size: 1.5rem;
 	font-weight: 500;
 	line-height: 2rem;
+	text-align: center;
 `;
 
 export const Icons = styled.div`
@@ -91,7 +110,7 @@ export const ResumeButton = styled.button`
 	border: none;
 	border-radius: 5px;
 	padding: 8px 8px;
-	margin: 0 auto;
+	margin: 10px auto;
 	margin-top: 20px;
 
 	/* typography */

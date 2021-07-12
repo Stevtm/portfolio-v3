@@ -48,6 +48,8 @@ export const ContactForm = styled.form`
 	/* box model */
 	display: flex;
 	flex-direction: column;
+	max-width: 500px;
+	margin: 0 auto;
 `;
 
 export const FormLabel = styled.label`

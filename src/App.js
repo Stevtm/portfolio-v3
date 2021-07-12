@@ -6,7 +6,6 @@ import { theme } from "./theme";
 import MediaQuery from "react-responsive";
 
 import Nav from "./components/Nav";
-import { Logo } from "./components/Nav/styles";
 import Title from "./components/Title";
 import About from "./components/About";
 import Portfolio from "./components/Portfolio";
