@@ -1,7 +1,7 @@
 import React from "react";
 
 // import icons from assets folder
-import { FaGithubSquare, FaLinkedin, FaInstagramSquare } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaInstagram } from "react-icons/fa";
 
 // import styled components
 import { FooterContainer, Link, Links, Copyright } from "./styles";
@@ -11,7 +11,7 @@ const Footer = () => {
 		<FooterContainer>
 			<Links>
 				<Link href="https://github.com/Stevtm" target="_blank">
-					<FaGithubSquare></FaGithubSquare>
+					<FaGithub></FaGithub>
 				</Link>
 				<Link
 					href="https://www.linkedin.com/in/stevenmaddison/"
@@ -23,7 +23,7 @@ const Footer = () => {
 					href="https://www.instagram.com/steeeeeeeeeeeeev/"
 					target="_blank"
 				>
-					<FaInstagramSquare></FaInstagramSquare>
+					<FaInstagram></FaInstagram>
 				</Link>
 			</Links>
 			<Copyright>© Steven Maddison 2021</Copyright>
