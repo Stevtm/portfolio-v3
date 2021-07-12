@@ -85,6 +85,17 @@ export const MessageInput = styled.textarea`
 	line-height: 1.75rem;
 `;
 
+export const ErrorMsg = styled.p`
+	/* box model */
+	padding: 0 0 10px 0;
+	margin: 0 auto;
+
+	/* typography */
+	color: red;
+	font-size: 1.125rem;
+	line-height: 1.75rem;
+`;
+
 export const Submit = styled.button`
 	/* box model */
 	border: none;
