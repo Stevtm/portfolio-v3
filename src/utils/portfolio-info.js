@@ -48,4 +48,28 @@ export const portfolioInfo = [
 		github: "https://github.com/Stevtm/tech-blog",
 		link: "https://stark-harbor-07287.herokuapp.com/",
 	},
+	{
+		id: 5,
+		title: "Employee Tracker",
+		desc: "Command line application that allows the user to manage employee data in a MySQL database.",
+		tools: [
+			{ id: 1, name: "MySQL" },
+			{ id: 2, name: "Inquirer.js" },
+			{ id: 3, name: "MySQL2" },
+			{ id: 4, name: "console.table" },
+		],
+		github: "https://github.com/Stevtm/employee-tracker",
+	},
+	{
+		id: 6,
+		title: "Note Taker",
+		desc: "Simple web application that can be used to create and delete notes which can be accessed from any location or device.",
+		tools: [
+			{ id: 1, name: "Express" },
+			{ id: 2, name: "Jest" },
+			{ id: 3, name: "Bootstrap" },
+		],
+		github: "https://github.com/Stevtm/note-taker",
+		link: "https://murmuring-chamber-38208.herokuapp.com/",
+	},
 ];
