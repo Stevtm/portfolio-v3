@@ -1,6 +1,20 @@
 export const portfolioInfo = [
 	{
 		id: 1,
+		title: "Art Gallery Online",
+		desc: "An e-commerce platform that allows users to post their homemade art for sale, and purchase art posted by other users.",
+		tools: [
+			{ id: 1, name: "MERN" },
+			{ id: 2, name: "GraphQL" },
+			{ id: 3, name: "Stripe" },
+			{ id: 4, name: "Firebase Auth" },
+			{ id: 5, name: "Firebase Storage" },
+		],
+		github: "https://github.com/Stevtm/art-gallery-online",
+		link: "https://shrouded-sands-03163.herokuapp.com/",
+	},
+	{
+		id: 2,
 		title: "TLNT",
 		desc: "A Talent repository that can be used by talent to create profiles and by agents to search and filter talent profiles.",
 		tools: [
@@ -12,7 +26,7 @@ export const portfolioInfo = [
 		link: "https://evening-reaches-27279.herokuapp.com/login",
 	},
 	{
-		id: 2,
+		id: 3,
 		title: "Budget Tracker",
 		desc: "A simple budget tracker PWA that visualizes transactions and handles offline submissions.",
 		tools: [
@@ -25,7 +39,7 @@ export const portfolioInfo = [
 		link: "https://sheltered-river-01501.herokuapp.com/",
 	},
 	{
-		id: 3,
+		id: 4,
 		title: "Social Network API",
 		desc: "API for a social network that has routes for all CRUD operations for users, thoughts (i.e., posts), and reactions to thoughts.",
 		tools: [
@@ -36,7 +50,7 @@ export const portfolioInfo = [
 		github: "https://github.com/Stevtm/social-network-api",
 	},
 	{
-		id: 4,
+		id: 5,
 		title: "Tech Blog",
 		desc: "CMS-style blod site that allows users to create accounts, create, modify, and delete their own blog posts, and comment on existing blog posts.",
 		tools: [
@@ -49,7 +63,7 @@ export const portfolioInfo = [
 		link: "https://stark-harbor-07287.herokuapp.com/",
 	},
 	{
-		id: 5,
+		id: 6,
 		title: "Employee Tracker",
 		desc: "Command line application that allows the user to manage employee data in a MySQL database.",
 		tools: [
@@ -61,7 +75,7 @@ export const portfolioInfo = [
 		github: "https://github.com/Stevtm/employee-tracker",
 	},
 	{
-		id: 6,
+		id: 7,
 		title: "Note Taker",
 		desc: "Simple web application that can be used to create and delete notes which can be accessed from any location or device.",
 		tools: [
