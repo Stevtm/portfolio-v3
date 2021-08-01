@@ -26,6 +26,8 @@ import {
 	SiGraphql,
 	SiJest,
 	SiJquery,
+	SiFirebase,
+	SiStyledComponents,
 } from "react-icons/si";
 
 const Resume = () => {
@@ -44,21 +46,23 @@ const Resume = () => {
 					<TechStack>
 						<TechHeader>Front-End</TechHeader>
 						<Icons>
-							<FaReact></FaReact>
-							<FaCss3></FaCss3>
-							<FaHtml5></FaHtml5>
-							<SiTailwindcss></SiTailwindcss>
-							<SiJquery></SiJquery>
+							<FaReact alt="React"></FaReact>
+							<FaCss3 alt="CSS3"></FaCss3>
+							<FaHtml5 alt="HTML5"></FaHtml5>
+							<SiTailwindcss alt="Tailwind CSS"></SiTailwindcss>
+							<SiStyledComponents alt="styled-components"></SiStyledComponents>
+							<SiJquery alt="jQuery"></SiJquery>
 						</Icons>
 					</TechStack>
 					<TechStack>
 						<TechHeader>Back-End</TechHeader>
 						<Icons>
-							<FaNodeJs></FaNodeJs>
-							<SiMongodb></SiMongodb>
-							<SiMysql></SiMysql>
-							<SiGraphql></SiGraphql>
-							<SiJest></SiJest>
+							<FaNodeJs alt="Node.js"></FaNodeJs>
+							<SiMongodb alt="MongoDB"></SiMongodb>
+							<SiMysql alt="MySQL"></SiMysql>
+							<SiGraphql alt="GraphQL"></SiGraphql>
+							<SiJest alt="Jest"></SiJest>
+							<SiFirebase alt="Firebase"></SiFirebase>
 						</Icons>
 					</TechStack>
 				</TechContainer>
