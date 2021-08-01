@@ -43,9 +43,9 @@ const Nav = () => {
 						<NavTitle>
 							<NavLink href="#resume">Résumé</NavLink>
 						</NavTitle>
-						<NavTitle>
+						{/* <NavTitle>
 							<NavLink href="#contact">Contact Me</NavLink>
-						</NavTitle>
+						</NavTitle> */}
 					</NavBar>
 				</nav>
 			</MediaQuery>

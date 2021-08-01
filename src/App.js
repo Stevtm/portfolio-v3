@@ -9,7 +9,7 @@ import Nav from "./components/Nav";
 import Title from "./components/Title";
 import About from "./components/About";
 import Portfolio from "./components/Portfolio";
-import Contact from "./components/Contact";
+// import Contact from "./components/Contact";
 import Resume from "./components/Resume";
 import Footer from "./components/Footer";
 
@@ -35,7 +35,7 @@ const App = () => {
 					<About></About>
 					<Portfolio></Portfolio>
 					<Resume></Resume>
-					<Contact></Contact>
+					{/* <Contact></Contact> */}
 					<Footer></Footer>
 				</MediaQuery>
 				<MediaQuery minWidth={671}>
@@ -46,7 +46,7 @@ const App = () => {
 							<About></About>
 							<Portfolio></Portfolio>
 							<Resume></Resume>
-							<Contact></Contact>
+							{/* <Contact></Contact> */}
 							<Footer></Footer>
 						</Content>
 					</Grid>

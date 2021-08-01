@@ -9,7 +9,7 @@ export const FooterContainer = styled.div`
 	width: 100%;
 
 	/* visual decorations */
-	background-color: ${({ theme }) => theme.pastelGreen.light};
+	background-color: ${({ theme }) => theme.pastelPurple.light};
 `;
 
 export const Links = styled.div`
