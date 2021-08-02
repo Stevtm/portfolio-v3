@@ -57,15 +57,19 @@ export const TechContainer = styled.div`
 	/* box model */
 	display: flex;
 	flex-direction: column;
+	align-items: center;
 	margin: 0 auto;
 
 	@media (min-width: 1025px) {
 		flex-direction: row;
+		justify-content: center;
+		flex-wrap: wrap;
 	}
 `;
 
 export const TechStack = styled.div`
 	/* box model */
+	width: 350px;
 	@media (min-width: 1025px) {
 		margin: 20px;
 	}

@@ -28,6 +28,8 @@ import {
 	SiJquery,
 	SiFirebase,
 	SiStyledComponents,
+	SiJavascript,
+	SiTypescript,
 } from "react-icons/si";
 
 const Resume = () => {
@@ -44,11 +46,18 @@ const Resume = () => {
 				</ResumeText>
 				<TechContainer>
 					<TechStack>
+						<TechHeader>Languages</TechHeader>
+						<Icons>
+							<SiJavascript alt="JavaScript"></SiJavascript>
+							<SiTypescript alt="TypeScript"></SiTypescript>
+							<FaHtml5 alt="HTML5"></FaHtml5>
+						</Icons>
+					</TechStack>
+					<TechStack>
 						<TechHeader>Front-End</TechHeader>
 						<Icons>
 							<FaReact alt="React"></FaReact>
 							<FaCss3 alt="CSS3"></FaCss3>
-							<FaHtml5 alt="HTML5"></FaHtml5>
 							<SiTailwindcss alt="Tailwind CSS"></SiTailwindcss>
 							<SiStyledComponents alt="styled-components"></SiStyledComponents>
 							<SiJquery alt="jQuery"></SiJquery>
