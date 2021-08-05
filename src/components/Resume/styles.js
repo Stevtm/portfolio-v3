@@ -42,7 +42,7 @@ export const HeaderText = styled.h2`
 	/* typography */
 	color: ${({ theme }) => theme.prussianBlue.dark};
 	font-size: 2.25rem;
-	font-weight: 400;
+	font-weight: 500;
 	line-height: 2.5rem;
 `;
 
