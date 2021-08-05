@@ -23,7 +23,7 @@ export const ColorBar = styled.div`
 	margin-right: 10px;
 
 	/* visual decorations */
-	background-color: ${({ theme }) => theme.pastelGreen.dark};
+	background-color: ${({ theme }) => theme.pastelGreen.DEFAULT};
 `;
 
 export const Name = styled.h1`
@@ -37,7 +37,7 @@ export const Name = styled.h1`
 	line-height: 1;
 
 	span {
-		color: ${({ theme }) => theme.secondary};
+		color: ${({ theme }) => theme.pastelGreen.dark};
 	}
 `;
 

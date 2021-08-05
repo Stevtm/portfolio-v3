@@ -13,7 +13,7 @@ export const AboutSection = styled.section`
 	padding: 20px;
 
 	/* visual decorations */
-	background-color: ${({ theme }) => theme.pastelBlue.light};
+	background-color: ${({ theme }) => theme.pastelBlue.lighter};
 
 	@media (min-width: 671px) {
 		padding-top: 60px;
@@ -26,7 +26,7 @@ export const ColorBar = styled.div`
 	margin-right: 10px;
 
 	/* visual decorations */
-	background-color: ${({ theme }) => theme.pastelBlue.dark};
+	background-color: ${({ theme }) => theme.pastelBlue.DEFAULT};
 `;
 
 export const AboutHeader = styled.div`
@@ -42,9 +42,9 @@ export const HeaderText = styled.h2`
 	margin: 5px 0;
 
 	/* typography */
-	color: ${({ theme }) => theme.pastelBlue.darker};
+	color: ${({ theme }) => theme.pastelBlue.dark};
 	font-size: 2.25rem;
-	font-weight: 400;
+	font-weight: 500;
 	line-height: 2.5rem;
 `;
 

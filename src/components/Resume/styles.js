@@ -15,7 +15,7 @@ export const ResumeSection = styled.section`
 	padding: 20px;
 
 	/* visual decorations */
-	background-color: ${({ theme }) => theme.prussianBlue.light};
+	background-color: ${({ theme }) => theme.prussianBlue.lighter};
 `;
 
 export const ResumeHeader = styled.div`

@@ -13,7 +13,7 @@ export const PortfolioSection = styled.section`
 	padding: 20px;
 
 	/* visual decorations */
-	background-color: ${({ theme }) => theme.pastelGreen.light};
+	background-color: ${({ theme }) => theme.pastelGreen.lighter};
 `;
 
 export const ColorBar = styled.div`
@@ -22,7 +22,7 @@ export const ColorBar = styled.div`
 	margin-right: 10px;
 
 	/* visual decorations */
-	background-color: ${({ theme }) => theme.pastelGreen.dark};
+	background-color: ${({ theme }) => theme.pastelGreen.DEFAULT};
 `;
 
 export const PortfolioHeader = styled.div`
@@ -38,8 +38,8 @@ export const HeaderText = styled.h2`
 	margin: 5px 0;
 
 	/* typography */
-	color: ${({ theme }) => theme.secondary};
+	color: ${({ theme }) => theme.pastelGreen.dark};
 	font-size: 2.25rem;
-	font-weight: 400;
+	font-weight: 500;
 	line-height: 2.5rem;
 `;
