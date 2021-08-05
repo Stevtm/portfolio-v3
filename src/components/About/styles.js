@@ -6,6 +6,10 @@ export const Anchor = styled.span`
 	height: calc(40px);
 	margin-top: -40px;
 	visibility: hidden;
+
+	@media (min-width: 671px) {
+		height: 0;
+	}
 `;
 
 export const AboutSection = styled.section`

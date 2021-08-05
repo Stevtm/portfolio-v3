@@ -35,18 +35,15 @@ const App = () => {
 					<About></About>
 					<Portfolio></Portfolio>
 					<Resume></Resume>
-					{/* <Contact></Contact> */}
 					<Footer></Footer>
 				</MediaQuery>
 				<MediaQuery minWidth={671}>
 					<Grid>
 						<Title></Title>
 						<Content>
-							<Nav></Nav>
 							<About></About>
 							<Portfolio></Portfolio>
 							<Resume></Resume>
-							{/* <Contact></Contact> */}
 							<Footer></Footer>
 						</Content>
 					</Grid>
