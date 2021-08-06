@@ -19,7 +19,7 @@ const About = () => {
 			<Anchor id={"about"}></Anchor>
 			<AboutSection>
 				<AboutHeader>
-					<ColorBar></ColorBar>
+					{/* <ColorBar></ColorBar> */}
 					<HeaderText>About Me</HeaderText>
 				</AboutHeader>
 				<AboutContent>

@@ -38,7 +38,7 @@ export const AboutHeader = styled.div`
 	display: flex;
 	flex-direction: row;
 	text-align: center;
-	margin: 25px 0;
+	margin: 10px 0;
 `;
 
 export const HeaderText = styled.h2`
@@ -56,8 +56,14 @@ export const HeaderText = styled.h2`
 export const AboutContent = styled.div`
 	/* box model */
 	align-items: center;
+	border-top: 10px solid ${({ theme }) => theme.pastelBlue.DEFAULT};
+	border-radius: 0px 0px 30px 30px;
 	display: flex;
 	flex-direction: column;
+	padding: 15px;
+
+	/* visual decorations */
+	background-color: white;
 
 	@media (min-width: 1281px) {
 		flex-direction: row;
@@ -66,6 +72,7 @@ export const AboutContent = styled.div`
 
 export const AboutText = styled.p`
 	/* box model */
+	padding: 0px 5px;
 	margin: 10px 0;
 	width: 100%;
 
@@ -76,10 +83,9 @@ export const AboutText = styled.p`
 
 export const ProfilePic = styled.img`
 	/* box model */
-	margin: 10px 0;
+	border: 5px solid ${({ theme }) => theme.pastelBlue.light};
+	border-radius: 100%;
+	margin: 10px 5px;
 	width: 80%;
 	max-width: 300px;
-
-	/* visual decorations */
-	border-radius: 100%;
 `;
