@@ -23,17 +23,17 @@ export const ResumeHeader = styled.div`
 	display: flex;
 	flex-direction: row;
 	text-align: center;
-	margin: 25px 0;
+	margin: 10px 0;
 `;
 
-export const ColorBar = styled.div`
-	/* box model */
-	width: 0.45rem;
-	margin-right: 10px;
+// export const ColorBar = styled.div`
+// 	/* box model */
+// 	width: 0.45rem;
+// 	margin-right: 10px;
 
-	/* visual decorations */
-	background-color: ${({ theme }) => theme.prussianBlue.DEFAULT};
-`;
+// 	/* visual decorations */
+// 	background-color: ${({ theme }) => theme.prussianBlue.DEFAULT};
+// `;
 
 export const HeaderText = styled.h2`
 	/* box model */
@@ -50,43 +50,26 @@ export const HeaderText = styled.h2`
 export const ResumeText = styled.h3`
 	/* typography */
 	font-size: 1.125rem;
-	line-height: 1.75rem;
 	font-weight: 400;
+	line-height: 1.75rem;
+	padding: 0px 5px;
+	margin: 10px 0;
 `;
 
 export const TechContainer = styled.div`
 	/* box model */
-	display: flex;
-	flex-direction: column;
 	align-items: center;
+	border-top: 10px solid ${({ theme }) => theme.prussianBlue.DEFAULT};
+	border-radius: 0px 0px 30px 30px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	padding: 15px;
 	margin: 0 auto;
 
-	@media (min-width: 1025px) {
-		flex-direction: row;
-		justify-content: center;
-		flex-wrap: wrap;
-	}
-`;
-
-export const TechStack = styled.div`
-	/* box model */
-	width: 350px;
-	@media (min-width: 1025px) {
-		margin: 20px;
-	}
-`;
-
-export const TechHeader = styled.h4`
-	/* box model */
-	border-bottom: 5px solid ${({ theme }) => theme.prussianBlue.dark};
-	padding: 10px;
-	margin: 0 auto;
-
-	/* typography */
-	font-size: 1.5rem;
-	font-weight: 500;
-	line-height: 2rem;
-	text-align: center;
+	/* visual decorations */
+	background-color: white;
 `;
 
 export const Icons = styled.div`
@@ -98,8 +81,6 @@ export const Icons = styled.div`
 
 	/* typography */
 	color: ${({ theme }) => theme.prussianBlue.dark};
-
-	/* visual decorations */
 
 	svg {
 		/* box model */

@@ -5,7 +5,7 @@ import RecentPic from "../../assets/images/recent-pic.jpeg";
 import {
 	Anchor,
 	AboutSection,
-	ColorBar,
+	// ColorBar,
 	AboutHeader,
 	HeaderText,
 	AboutContent,

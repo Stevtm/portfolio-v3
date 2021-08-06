@@ -24,14 +24,14 @@ export const AboutSection = styled.section`
 	}
 `;
 
-export const ColorBar = styled.div`
-	/* box model */
-	width: 0.45rem;
-	margin-right: 10px;
+// export const ColorBar = styled.div`
+// 	/* box model */
+// 	width: 0.45rem;
+// 	margin-right: 10px;
 
-	/* visual decorations */
-	background-color: ${({ theme }) => theme.pastelBlue.DEFAULT};
-`;
+// 	/* visual decorations */
+// 	background-color: ${({ theme }) => theme.pastelBlue.DEFAULT};
+// `;
 
 export const AboutHeader = styled.div`
 	/* box model */
@@ -83,7 +83,6 @@ export const AboutText = styled.p`
 
 export const ProfilePic = styled.img`
 	/* box model */
-	border: 5px solid ${({ theme }) => theme.pastelBlue.light};
 	border-radius: 100%;
 	margin: 10px 5px;
 	width: 80%;

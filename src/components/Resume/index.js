@@ -6,12 +6,10 @@ import {
 	Anchor,
 	ResumeSection,
 	ResumeHeader,
-	ColorBar,
+	// ColorBar,
 	HeaderText,
 	ResumeText,
 	TechContainer,
-	TechStack,
-	TechHeader,
 	Icons,
 	ResumeButton,
 	ResumeLink,
@@ -38,48 +36,35 @@ const Resume = () => {
 			<Anchor id={"resume"}></Anchor>
 			<ResumeSection>
 				<ResumeHeader>
-					<ColorBar></ColorBar>
+					{/* <ColorBar></ColorBar> */}
 					<HeaderText>Résumé</HeaderText>
 				</ResumeHeader>
-				<ResumeText>
-					These are some of the technologies I've been working with recently:
-				</ResumeText>
 				<TechContainer>
-					<TechStack>
-						<TechHeader>Languages</TechHeader>
-						<Icons>
-							<SiJavascript alt="JavaScript"></SiJavascript>
-							<SiTypescript alt="TypeScript"></SiTypescript>
-							<FaHtml5 alt="HTML5"></FaHtml5>
-						</Icons>
-					</TechStack>
-					<TechStack>
-						<TechHeader>Front-End</TechHeader>
-						<Icons>
-							<FaReact alt="React"></FaReact>
-							<FaCss3 alt="CSS3"></FaCss3>
-							<SiTailwindcss alt="Tailwind CSS"></SiTailwindcss>
-							<SiStyledComponents alt="styled-components"></SiStyledComponents>
-							<SiJquery alt="jQuery"></SiJquery>
-						</Icons>
-					</TechStack>
-					<TechStack>
-						<TechHeader>Back-End</TechHeader>
-						<Icons>
-							<FaNodeJs alt="Node.js"></FaNodeJs>
-							<SiMongodb alt="MongoDB"></SiMongodb>
-							<SiMysql alt="MySQL"></SiMysql>
-							<SiGraphql alt="GraphQL"></SiGraphql>
-							<SiJest alt="Jest"></SiJest>
-							<SiFirebase alt="Firebase"></SiFirebase>
-						</Icons>
-					</TechStack>
+					<ResumeText>
+						These are some of the technologies I've been working with recently:
+					</ResumeText>
+					<Icons>
+						<SiJavascript alt="JavaScript"></SiJavascript>
+						<SiTypescript alt="TypeScript"></SiTypescript>
+						<FaHtml5 alt="HTML5"></FaHtml5>
+						<FaCss3 alt="CSS3"></FaCss3>
+						<FaReact alt="React"></FaReact>
+						<SiTailwindcss alt="Tailwind CSS"></SiTailwindcss>
+						<SiStyledComponents alt="styled-components"></SiStyledComponents>
+						<SiJquery alt="jQuery"></SiJquery>
+						<FaNodeJs alt="Node.js"></FaNodeJs>
+						<SiMongodb alt="MongoDB"></SiMongodb>
+						<SiMysql alt="MySQL"></SiMysql>
+						<SiGraphql alt="GraphQL"></SiGraphql>
+						<SiJest alt="Jest"></SiJest>
+						<SiFirebase alt="Firebase"></SiFirebase>
+					</Icons>
+					<ResumeButton>
+						<ResumeLink href={ResumePDF} target="_blank">
+							Download My Full Résumé
+						</ResumeLink>
+					</ResumeButton>
 				</TechContainer>
-				<ResumeButton>
-					<ResumeLink href={ResumePDF} target="_blank">
-						Download My Full Résumé
-					</ResumeLink>
-				</ResumeButton>
 			</ResumeSection>
 		</>
 	);
