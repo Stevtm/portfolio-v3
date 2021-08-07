@@ -7,7 +7,8 @@ export const TitleSection = styled.section`
 	flex-direction: column;
 	height: 100vh;
 	justify-content: center;
-	margin: 0 20px;
+	padding: 0 20px;
+	/* margin: 0 20px; */
 `;
 
 export const TitleContainer = styled.div`
