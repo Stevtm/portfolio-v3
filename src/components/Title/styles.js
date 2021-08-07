@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import HexagonBackground from "../../assets/images/pattern_hexagon.png";
 
 export const TitleSection = styled.section`
 	/* box model */
@@ -9,6 +10,7 @@ export const TitleSection = styled.section`
 	justify-content: center;
 	padding: 0 20px;
 	/* margin: 0 20px; */
+	background-image: url(${HexagonBackground});
 `;
 
 export const TitleContainer = styled.div`
