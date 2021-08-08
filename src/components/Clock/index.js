@@ -3,7 +3,7 @@ import Typewriter from "typewriter-effect";
 import { DateTime } from "luxon";
 
 // import styled components
-import { ClockDiv, Time } from "./style";
+import { ClockDiv, TimeDiv, TimeDescription, Time } from "./style";
 
 const Clock = () => {
 	const [time, setTime] = useState(
@@ -22,15 +22,18 @@ const Clock = () => {
 
 	return (
 		<ClockDiv>
-			<p>
-				It's <Time>{time} </Time>in Toronto
-			</p>
+			<TimeDiv>
+				<TimeDescription>It's</TimeDescription>
+				<Time>{time} </Time>
+				<TimeDescription>in Toronto</TimeDescription>
+			</TimeDiv>
+			<TimeDescription>I'm probably...</TimeDescription>
 			<Typewriter
 				options={{
 					strings: [
-						"I'm probably coding",
-						"I might be hanging out with friends",
-						"I could be watching a movie",
+						"working on a coding project",
+						"hanging out with friends",
+						"watching a movie",
 					],
 					deleteSpeed: 1,
 					autoStart: true,

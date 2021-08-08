@@ -5,7 +5,7 @@ export const ClockDiv = styled.div`
 	align-items: center;
 	display: flex;
 	flex-direction: column;
-	padding-bottom: 30px;
+	margin: 17% 0;
 	width: 100%;
 
 	/* typography */
@@ -13,11 +13,38 @@ export const ClockDiv = styled.div`
 	/* visual decorations */
 `;
 
-export const Time = styled.strong`
+export const TimeDiv = styled.div`
 	/* box model */
+	align-items: center;
+	display: flex;
+	flex-direction: row;
 
 	/* typography */
-	font-size: 3rem;
+
+	/* visual decorations */
+`;
+
+export const TimeDescription = styled.p`
+	/* box model */
+	padding: 0px 10px;
+	margin: 0;
+
+	/* typography */
+	font-size: 1.5rem;
+	line-height: 2rem;
+
+	/* visual decorations */
+`;
+
+export const Time = styled.p`
+	/* box model */
+	text-align: center;
+	padding: 0;
+	margin: 0;
+
+	/* typography */
+	font-size: 3.75rem;
+	line-height: 1;
 
 	/* visual decorations */
 `;

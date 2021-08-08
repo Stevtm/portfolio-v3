@@ -1,6 +1,6 @@
 import React from "react";
 
-import Clock from "../Clock";
+// import Clock from "../Clock";
 
 // import styled components
 import { TitleSection, TitleContainer, ColorBar, Name, Motto } from "./styles";
@@ -8,7 +8,6 @@ import { TitleSection, TitleContainer, ColorBar, Name, Motto } from "./styles";
 const Title = () => {
 	return (
 		<TitleSection>
-			<div></div>
 			<TitleContainer>
 				<ColorBar></ColorBar>
 				<div>
@@ -21,7 +20,7 @@ const Title = () => {
 					</Motto>
 				</div>
 			</TitleContainer>
-			<Clock></Clock>
+			{/* <Clock></Clock> */}
 		</TitleSection>
 	);
 };

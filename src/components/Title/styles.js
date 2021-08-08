@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import HexagonBackground from "../../assets/images/pattern_hexagon.png";
+import HexagonBackground from "../../assets/images/pattern_hexagon-min.png";
 
 export const TitleSection = styled.section`
 	/* box model */
@@ -7,7 +7,8 @@ export const TitleSection = styled.section`
 	display: flex;
 	flex-direction: column;
 	height: 100vh;
-	justify-content: space-around;
+	/* justify-content: flex-end when the clock div is in place */
+	justify-content: center;
 	padding: 0 20px;
 	/* margin: 0 20px; */
 	background-image: url(${HexagonBackground});
