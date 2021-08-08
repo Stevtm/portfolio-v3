@@ -7,7 +7,7 @@ export const TitleSection = styled.section`
 	display: flex;
 	flex-direction: column;
 	height: 100vh;
-	justify-content: center;
+	justify-content: space-around;
 	padding: 0 20px;
 	/* margin: 0 20px; */
 	background-image: url(${HexagonBackground});
@@ -35,7 +35,8 @@ export const Name = styled.h1`
 
 	/* typography */
 	color: black;
-	font-size: 4.5rem;
+	font-family: "Staatliches";
+	font-size: 5.5rem;
 	font-weight: 400;
 	line-height: 1;
 
@@ -46,7 +47,7 @@ export const Name = styled.h1`
 
 export const Motto = styled.h2`
 	/* box model */
-	padding-top: 20px;
+	padding-top: 10px;
 	margin: 0;
 
 	/* typography */
