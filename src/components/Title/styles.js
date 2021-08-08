@@ -6,12 +6,16 @@ export const TitleSection = styled.section`
 	align-items: center;
 	display: flex;
 	flex-direction: column;
-	height: 100vh;
+	height: 98vh;
 	/* justify-content: flex-end when the clock div is in place */
 	justify-content: center;
 	padding: 0 20px;
 	/* margin: 0 20px; */
 	background-image: url(${HexagonBackground});
+
+	@media (min-width: 671px) {
+		height: 100vh;
+	}
 `;
 
 export const TitleContainer = styled.div`
