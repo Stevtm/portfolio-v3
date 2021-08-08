@@ -1,13 +1,29 @@
-import React from "react";
+import React, { useState } from "react";
 import Typewriter from "typewriter-effect";
+import { DateTime } from "luxon";
+
+// import styled components
+import { ClockDiv, Time } from "./style";
 
 const Clock = () => {
-	const time = "10:00 p.m.";
+	const [time, setTime] = useState(
+		DateTime.now()
+			.setZone("Asia/Tokyo")
+			.toLocaleString(DateTime.TIME_24_WITH_SECONDS)
+	);
+
+	setTimeout(() => {
+		setTime(
+			DateTime.now()
+				.setZone("Asia/Tokyo")
+				.toLocaleString(DateTime.TIME_24_WITH_SECONDS)
+		);
+	}, 1000);
 
 	return (
-		<div>
+		<ClockDiv>
 			<p>
-				It's <strong>{time}</strong> in Toronto
+				It's <Time>{time} </Time>in Toronto
 			</p>
 			<Typewriter
 				options={{
@@ -21,7 +37,7 @@ const Clock = () => {
 					loop: true,
 				}}
 			/>
-		</div>
+		</ClockDiv>
 	);
 };
 

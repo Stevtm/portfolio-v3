@@ -18,7 +18,7 @@ export const PortfolioSection = styled.section`
 
 export const ColorBar = styled.div`
 	/* box model */
-	width: 0.45rem;
+	width: 0.55rem;
 	margin-right: 10px;
 
 	/* visual decorations */

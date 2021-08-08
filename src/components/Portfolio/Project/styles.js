@@ -34,12 +34,12 @@ export const Icons = styled.div``;
 
 export const ColorBar = styled.div`
 	/* box model */
-	height: 5px;
+	height: 10px;
 	width: 100%;
 	margin-right: 10px;
 
 	/* visual decorations */
-	background-color: ${({ theme }) => theme.pastelBlue.dark};
+	background-color: ${({ theme }) => theme.pastelGreen.DEFAULT};
 `;
 
 export const ProjectContent = styled.div`
