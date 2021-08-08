@@ -1,5 +1,5 @@
 import React from "react";
-import ResumePDF from "../../assets/documents/Resume 2019.pdf";
+import ResumePDF from "../../assets/documents/Resume_08Aug2021.pdf";
 
 // import styled components
 import {
