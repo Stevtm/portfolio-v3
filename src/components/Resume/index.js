@@ -6,11 +6,12 @@ import {
 	Anchor,
 	ResumeSection,
 	ResumeHeader,
-	// ColorBar,
 	HeaderText,
 	ResumeText,
 	TechContainer,
+	Tech,
 	Icons,
+	TechName,
 	ResumeButton,
 	ResumeLink,
 } from "./styles";
@@ -44,26 +45,68 @@ const Resume = () => {
 						These are some of the technologies I've been working with recently:
 					</ResumeText>
 					<Icons>
-						<SiJavascript alt="JavaScript" title="JavaScript"></SiJavascript>
-						<SiTypescript alt="TypeScript" title="TypeScript"></SiTypescript>
-						<FaHtml5 alt="HTML5" title="HTML5"></FaHtml5>
-						<FaCss3 alt="CSS3" title="CSS3"></FaCss3>
-						<FaReact alt="React" title="React"></FaReact>
-						<SiTailwindcss
-							alt="Tailwind CSS"
-							title="Tailwind CSS"
-						></SiTailwindcss>
-						<SiStyledComponents
-							alt="styled-components"
-							title="styled-components"
-						></SiStyledComponents>
-						<SiJquery alt="jQuery" title="jQuery"></SiJquery>
-						<FaNodeJs alt="Node.js" title="Node.js"></FaNodeJs>
-						<SiMongodb alt="MongoDB" title="MongoDB"></SiMongodb>
-						<SiMysql alt="MySQL" title="MySQL"></SiMysql>
-						<SiGraphql alt="GraphQL" title="GraphQL"></SiGraphql>
-						<SiJest alt="Jest" title="Jest"></SiJest>
-						<SiFirebase alt="Firebase" title="Firebase"></SiFirebase>
+						<Tech>
+							<SiJavascript alt="JavaScript" title="JavaScript"></SiJavascript>
+							<TechName>JavaScript</TechName>
+						</Tech>
+						<Tech>
+							<SiTypescript alt="TypeScript" title="TypeScript"></SiTypescript>
+							<TechName>TypeScript</TechName>
+						</Tech>
+						<Tech>
+							<FaHtml5 alt="HTML5" title="HTML5"></FaHtml5>
+							<TechName>HTML5</TechName>
+						</Tech>
+						<Tech>
+							<FaCss3 alt="CSS3" title="CSS3"></FaCss3>
+							<TechName>CSS3</TechName>
+						</Tech>
+						<Tech>
+							<FaReact alt="React" title="React"></FaReact>
+							<TechName>React</TechName>
+						</Tech>
+						<Tech>
+							<SiTailwindcss
+								alt="Tailwind CSS"
+								title="Tailwind CSS"
+							></SiTailwindcss>
+							<TechName>Tailwind CSS</TechName>
+						</Tech>
+						<Tech>
+							<SiStyledComponents
+								alt="styled-components"
+								title="styled-components"
+							></SiStyledComponents>
+							<TechName>styled-components</TechName>
+						</Tech>
+						<Tech>
+							<SiJquery alt="jQuery" title="jQuery"></SiJquery>
+							<TechName>jQuery</TechName>
+						</Tech>
+						<Tech>
+							<FaNodeJs alt="Node.js" title="Node.js"></FaNodeJs>
+							<TechName>Node.js</TechName>
+						</Tech>
+						<Tech>
+							<SiMongodb alt="MongoDB" title="MongoDB"></SiMongodb>
+							<TechName>MongoDB</TechName>
+						</Tech>
+						<Tech>
+							<SiMysql alt="MySQL" title="MySQL"></SiMysql>
+							<TechName>MySQL</TechName>
+						</Tech>
+						<Tech>
+							<SiGraphql alt="GraphQL" title="GraphQL"></SiGraphql>
+							<TechName>GraphQL</TechName>
+						</Tech>
+						<Tech>
+							<SiJest alt="Jest" title="Jest"></SiJest>
+							<TechName>Jest</TechName>
+						</Tech>
+						<Tech>
+							<SiFirebase alt="Firebase" title="Firebase"></SiFirebase>
+							<TechName>Firebase</TechName>
+						</Tech>
 					</Icons>
 					<ResumeButton>
 						<ResumeLink href={ResumePDF} target="_blank">

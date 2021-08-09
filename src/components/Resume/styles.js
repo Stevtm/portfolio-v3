@@ -72,6 +72,15 @@ export const TechContainer = styled.div`
 	background-color: white;
 `;
 
+export const Tech = styled.div`
+	/* box model */
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	margin: 0px 5px;
+	width: 65px;
+`;
+
 export const Icons = styled.div`
 	/* box model */
 	display: flex;
@@ -89,6 +98,16 @@ export const Icons = styled.div`
 		/* typography */
 		font-size: 40px;
 	}
+`;
+
+export const TechName = styled.p`
+	/* box model */
+	margin: 0;
+
+	/* typography */
+	font-size: 0.75rem;
+	line-height: 1rem;
+	text-align: center;
 `;
 
 export const ResumeButton = styled.button`
