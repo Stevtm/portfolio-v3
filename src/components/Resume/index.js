@@ -44,20 +44,26 @@ const Resume = () => {
 						These are some of the technologies I've been working with recently:
 					</ResumeText>
 					<Icons>
-						<SiJavascript alt="JavaScript"></SiJavascript>
-						<SiTypescript alt="TypeScript"></SiTypescript>
-						<FaHtml5 alt="HTML5"></FaHtml5>
-						<FaCss3 alt="CSS3"></FaCss3>
-						<FaReact alt="React"></FaReact>
-						<SiTailwindcss alt="Tailwind CSS"></SiTailwindcss>
-						<SiStyledComponents alt="styled-components"></SiStyledComponents>
-						<SiJquery alt="jQuery"></SiJquery>
-						<FaNodeJs alt="Node.js"></FaNodeJs>
-						<SiMongodb alt="MongoDB"></SiMongodb>
-						<SiMysql alt="MySQL"></SiMysql>
-						<SiGraphql alt="GraphQL"></SiGraphql>
-						<SiJest alt="Jest"></SiJest>
-						<SiFirebase alt="Firebase"></SiFirebase>
+						<SiJavascript alt="JavaScript" title="JavaScript"></SiJavascript>
+						<SiTypescript alt="TypeScript" title="TypeScript"></SiTypescript>
+						<FaHtml5 alt="HTML5" title="HTML5"></FaHtml5>
+						<FaCss3 alt="CSS3" title="CSS3"></FaCss3>
+						<FaReact alt="React" title="React"></FaReact>
+						<SiTailwindcss
+							alt="Tailwind CSS"
+							title="Tailwind CSS"
+						></SiTailwindcss>
+						<SiStyledComponents
+							alt="styled-components"
+							title="styled-components"
+						></SiStyledComponents>
+						<SiJquery alt="jQuery" title="jQuery"></SiJquery>
+						<FaNodeJs alt="Node.js" title="Node.js"></FaNodeJs>
+						<SiMongodb alt="MongoDB" title="MongoDB"></SiMongodb>
+						<SiMysql alt="MySQL" title="MySQL"></SiMysql>
+						<SiGraphql alt="GraphQL" title="GraphQL"></SiGraphql>
+						<SiJest alt="Jest" title="Jest"></SiJest>
+						<SiFirebase alt="Firebase" title="Firebase"></SiFirebase>
 					</Icons>
 					<ResumeButton>
 						<ResumeLink href={ResumePDF} target="_blank">
