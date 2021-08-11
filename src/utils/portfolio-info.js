@@ -48,6 +48,7 @@ export const portfolioInfo = [
 			{ id: 3, name: "Node.js" },
 		],
 		github: "https://github.com/Stevtm/social-network-api",
+		link: "https://www.youtube.com/watch?v=_xk4g-Z7das",
 	},
 	{
 		id: 5,
@@ -64,15 +65,15 @@ export const portfolioInfo = [
 	},
 	{
 		id: 6,
-		title: "Employee Tracker",
-		desc: "Command line application that allows the user to manage employee data in a MySQL database.",
+		title: "React TypeScript Quiz",
+		desc: "Quiz app built using Open Trivia Database API using React, TypeScript, and styled-components. ",
 		tools: [
-			{ id: 1, name: "MySQL" },
-			{ id: 2, name: "Inquirer.js" },
-			{ id: 3, name: "MySQL2" },
-			{ id: 4, name: "console.table" },
+			{ id: 1, name: "React" },
+			{ id: 2, name: "TypeScript" },
+			{ id: 3, name: "styled-components" },
 		],
-		github: "https://github.com/Stevtm/employee-tracker",
+		github: "https://github.com/Stevtm/react-typescript-quiz",
+		link: "https://stevtm.github.io/react-typescript-quiz/",
 	},
 	{
 		id: 7,
