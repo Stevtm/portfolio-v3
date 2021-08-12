@@ -2,7 +2,7 @@
 
 This personal portfolio showcases the programming projects I have completed to date, including links to the deployed applications and relevant GitHub repositories. The portfolio also includes some information about be, my contact information, and a link to my résumé.
 
-The live application is deployed here: https://stevtm.github.io/portfolio-v3/
+The live application is deployed here: https://stev.ca
 
 ## Tools Used
 
