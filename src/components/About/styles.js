@@ -71,9 +71,9 @@ export const AboutContent = styled.div`
 `;
 
 export const TextAndButton = styled.div`
-	/* box model */a
+	/* box model */
 	align-items: center;
-	display: flex; 
+	display: flex;
 	flex-direction: column;
 `;
 
