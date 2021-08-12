@@ -70,6 +70,13 @@ export const AboutContent = styled.div`
 	}
 `;
 
+export const TextAndButton = styled.div`
+	/* box model */a
+	align-items: center;
+	display: flex; 
+	flex-direction: column;
+`;
+
 export const AboutText = styled.p`
 	/* box model */
 	padding: 0px 5px;
@@ -81,10 +88,38 @@ export const AboutText = styled.p`
 	line-height: 1.75rem;
 `;
 
+export const ContactButton = styled.button`
+	/* box model */
+	border: none;
+	border-radius: 5px;
+	padding: 8px 8px;
+	margin: 10px auto;
+
+	/* typography */
+	color: white;
+	font-size: 1.125rem;
+	line-height: 1.75rem;
+
+	/* visual decorations */
+	background-color: ${({ theme }) => theme.pastelBlue.dark};
+	cursor: pointer;
+	transition: 0.2s all;
+
+	&:hover {
+		background-color: ${({ theme }) => theme.pastelBlue.DEFAULT};
+	}
+
+	> a {
+		/* typgraphy */
+		color: white;
+		text-decoration: none;
+	}
+`;
+
 export const ProfilePic = styled.img`
 	/* box model */
-	border-radius: 100%;
+	border-radius: 40px;
 	margin: 10px 5px;
 	width: 80%;
-	max-width: 300px;
+	max-width: 270px;
 `;
