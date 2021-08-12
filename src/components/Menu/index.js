@@ -16,9 +16,6 @@ const Menu = ({ open, setOpen }) => {
 			<a href="#resume" onClick={() => setOpen(false)}>
 				Résumé
 			</a>
-			<a href="#contact" onClick={() => setOpen(false)}>
-				Contact
-			</a>
 		</StyledMenu>
 	);
 };
