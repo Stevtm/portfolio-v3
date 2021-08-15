@@ -19,6 +19,7 @@ import {
 const Title = () => {
 	return (
 		<TitleSection>
+			<div style={{ marginTop: "20px" }}></div>
 			<TitleContainer>
 				<ColorBar></ColorBar>
 				<div>
