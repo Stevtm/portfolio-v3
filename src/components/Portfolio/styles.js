@@ -44,3 +44,16 @@ export const HeaderText = styled.h2`
 	font-weight: 500;
 	line-height: 1;
 `;
+
+export const PortfolioContent = styled.div`
+	/* box model */
+	align-items: center;
+	border-top: 10px solid ${({ theme }) => theme.pastelGreen.DEFAULT};
+	border-radius: 0px 0px 30px 30px;
+	display: flex;
+	flex-direction: column;
+	padding: 15px;
+
+	/* visual decorations */
+	background-color: white;
+`;
