@@ -8,14 +8,8 @@ const Burger = ({ open, setOpen, onClickOutside }) => {
 	return (
 		<StyledBurger
 			open={open}
-			onClick={async () => {
-				await setOpen(!open);
-
-				if (!open) {
-					document.body.setAttribute("style", "overflow: hidden");
-				} else {
-					document.body.setAttribute("style", "overflow: auto");
-				}
+			onClick={() => {
+				setOpen(!open);
 			}}
 		>
 			<div></div>

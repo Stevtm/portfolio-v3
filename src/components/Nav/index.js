@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 import Burger from "../Burger";
 import Menu from "../Menu";
@@ -9,6 +9,14 @@ import { Header, CollapsedContainer, Logo } from "./styles";
 
 const Nav = () => {
 	const [openBurger, setOpenBurger] = useState(false);
+
+	useEffect(() => {
+		if (openBurger === true) {
+			document.body.setAttribute("style", "overflow: hidden");
+		} else {
+			document.body.setAttribute("style", "overflow: auto");
+		}
+	}, [openBurger]);
 
 	return (
 		<Header>
