@@ -1,12 +1,64 @@
 import styled from "styled-components";
+import TLNTScreenshot from "../../../assets/images/TLNT-min.png";
 
 export const ProjectContainer = styled.div`
 	/* box model */
-	display: flex;
-	flex-direction: column;
-	padding: 5px 0;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	padding: 5px;
 	margin: 20px 0;
 	width: 100%;
+`;
+
+export const Tinted = styled.div`
+	/* box model */
+	grid-column: 1/3;
+	grid-row: 1;
+	position: relative;
+	float: left;
+	width: 100%;
+	z-index: 2;
+
+	/* visual decorations */
+	cursor: pointer;
+
+	:before {
+		content: "";
+		display: block;
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		background-color: ${({ theme }) => theme.pastelGreen.dark};
+		opacity: 0.7;
+		transition: background 0.3s linear;
+	}
+
+	:hover:before {
+		background: none;
+	}
+`;
+
+export const ProjectImg = styled.img`
+	/* box model */
+	width: 100%;
+	height: 100%;
+
+	/* visual decorations */
+	object-fit: cover;
+`;
+
+export const ProjectDetails = styled.div`
+	/* box model */
+	border-radius: 0 0 10px 10px;
+	grid-column: 2 / 5;
+	grid-row: 1;
+	margin: 30px 0;
+	z-index: 3;
+
+	/* visual decorations */
+	background-color: ${({ theme }) => theme.pastelGreen.lighter};
 `;
 
 export const ProjectHeader = styled.div`
@@ -19,7 +71,7 @@ export const ProjectHeader = styled.div`
 	margin: 0;
 `;
 
-export const ProjectTitle = styled.h1`
+export const ProjectTitle = styled.h2`
 	/* box model */
 	margin: 0;
 
@@ -39,21 +91,19 @@ export const ColorBar = styled.div`
 	margin-right: 10px;
 
 	/* visual decorations */
-	background-color: ${({ theme }) => theme.pastelGreen.DEFAULT};
+	background-color: ${({ theme }) => theme.pastelGreen.dark};
 `;
 
 export const ProjectContent = styled.div`
 	/* box model */
 	padding: 10px;
+	padding-top: 0px;
 	border-radius: 0 0 10px 10px;
-
-	/* visual decorations */
-	background-color: white;
 `;
 
 export const ProjectDesc = styled.p`
 	/* box model */
-	margin: 10px 0;
+	margin: 0;
 
 	/* typography */
 	font-size: 1.125rem;
