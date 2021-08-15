@@ -21,8 +21,10 @@ export const CollapsedContainer = styled.div`
 	width: 100%;
 	background-color: whitesmoke;
 	border-bottom: 2px solid grey;
+
 	/* background-blend-mode: blur(20px); */
 	position: fixed;
+	z-index: 999;
 `;
 
 export const Logo = styled.a`

@@ -23,6 +23,7 @@ export const Tinted = styled.a`
 	float: left;
 	height: 150px;
 	width: 100%;
+	z-index: 2;
 
 	/* visual decorations */
 	cursor: pointer;
@@ -51,7 +52,6 @@ export const Tinted = styled.a`
 		grid-column: 1/4;
 		grid-row: 1;
 		height: 100%;
-		z-index: 2;
 
 		:before {
 			border-radius: 10px;
@@ -86,6 +86,7 @@ export const ProjectDetails = styled.div`
 	/* box model */
 	border-radius: 0 0 10px 10px;
 	margin: 0;
+	z-index: 3;
 
 	/* visual decorations */
 	background-color: ${({ theme }) => theme.pastelGreen.lighter};
@@ -94,7 +95,6 @@ export const ProjectDetails = styled.div`
 		grid-column: 3 / 6;
 		grid-row: 1;
 		margin: 30px 0;
-		z-index: 3;
 	}
 `;
 
