@@ -70,6 +70,7 @@ export const Links = styled.div`
 	flex-direction: row;
 	justify-content: center;
 	padding: 0 0;
+	z-index: auto;
 
 	@media (min-width: 671px) {
 		top: 30%;
