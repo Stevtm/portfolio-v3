@@ -12,6 +12,7 @@ export const ProjectContainer = styled.article`
 
 export const Tinted = styled.div`
 	/* box model */
+	border-radius: 10px;
 	grid-column: 1/4;
 	grid-row: 1;
 	position: relative;
@@ -24,6 +25,7 @@ export const Tinted = styled.div`
 	cursor: pointer;
 
 	:before {
+		border-radius: 10px;
 		content: "";
 		display: block;
 		position: absolute;
@@ -42,6 +44,7 @@ export const Tinted = styled.div`
 
 export const ProjectImg = styled.img`
 	/* box model */
+	border-radius: 10px;
 	width: 100%;
 	height: 100%;
 

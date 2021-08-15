@@ -12,6 +12,7 @@ export const portfolioInfo = [
 		],
 		github: "https://github.com/Stevtm/art-gallery-online",
 		link: "https://shrouded-sands-03163.herokuapp.com/",
+		photo: "AGO",
 	},
 	{
 		id: 2,
@@ -24,6 +25,7 @@ export const portfolioInfo = [
 		],
 		github: "https://github.com/Stevtm/talent-agency",
 		link: "https://evening-reaches-27279.herokuapp.com/login",
+		photo: "TLNT",
 	},
 	{
 		id: 3,
@@ -37,21 +39,10 @@ export const portfolioInfo = [
 		],
 		github: "https://github.com/Stevtm/budget-tracker",
 		link: "https://sheltered-river-01501.herokuapp.com/",
+		photo: "Budget",
 	},
 	{
 		id: 4,
-		title: "Social Network API",
-		desc: "API for a social network that has routes for all CRUD operations for users, thoughts (i.e., posts), and reactions to thoughts.",
-		tools: [
-			{ id: 1, name: "Mongoose" },
-			{ id: 2, name: "Express" },
-			{ id: 3, name: "Node.js" },
-		],
-		github: "https://github.com/Stevtm/social-network-api",
-		link: "https://www.youtube.com/watch?v=_xk4g-Z7das",
-	},
-	{
-		id: 5,
 		title: "Tech Blog",
 		desc: "CMS-style blod site that allows users to create accounts, create, modify, and delete their own blog posts, and comment on existing blog posts.",
 		tools: [
@@ -62,9 +53,10 @@ export const portfolioInfo = [
 		],
 		github: "https://github.com/Stevtm/tech-blog",
 		link: "https://stark-harbor-07287.herokuapp.com/",
+		photo: "Tech",
 	},
 	{
-		id: 6,
+		id: 5,
 		title: "React TypeScript Quiz",
 		desc: "Quiz app built using Open Trivia Database API using React, TypeScript, and styled-components. ",
 		tools: [
@@ -74,9 +66,10 @@ export const portfolioInfo = [
 		],
 		github: "https://github.com/Stevtm/react-typescript-quiz",
 		link: "https://stevtm.github.io/react-typescript-quiz/",
+		photo: "RTQuiz",
 	},
 	{
-		id: 7,
+		id: 6,
 		title: "Note Taker",
 		desc: "Simple web application that can be used to create and delete notes which can be accessed from any location or device.",
 		tools: [
@@ -86,5 +79,6 @@ export const portfolioInfo = [
 		],
 		github: "https://github.com/Stevtm/note-taker",
 		link: "https://murmuring-chamber-38208.herokuapp.com/",
+		photo: "Note",
 	},
 ];

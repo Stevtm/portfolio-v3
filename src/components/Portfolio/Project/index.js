@@ -22,15 +22,49 @@ import {
 	Link,
 } from "./styles";
 
+import AGOScreenshot from "../../../assets/images/AGO-min.png";
 import TLNTScreenshot from "../../../assets/images/TLNT-min.png";
+import BudgetTrackerScreenshot from "../../../assets/images/BudgetTracker-min.png";
+import NoteTakerScreenshot from "../../../assets/images/NoteTaker-min.png";
+import RTQuizScreenshot from "../../../assets/images/RTQuiz-min.png";
+import TechBlogScreenshot from "../../../assets/images/TechBlog-min.png";
 
 const Project = ({ info }) => {
 	const { title, desc, tools, github, link } = info;
 
+	// get the correct image to display
+	let projectScreenshot;
+
+	switch (info.photo) {
+		case "AGO":
+			projectScreenshot = AGOScreenshot;
+			break;
+		case "TLNT":
+			projectScreenshot = TLNTScreenshot;
+			break;
+		case "Budget":
+			projectScreenshot = BudgetTrackerScreenshot;
+			break;
+		case "Tech":
+			projectScreenshot = TechBlogScreenshot;
+			break;
+		case "RTQuiz":
+			projectScreenshot = RTQuizScreenshot;
+			break;
+		case "Note":
+			projectScreenshot = NoteTakerScreenshot;
+			break;
+		default:
+			projectScreenshot = TLNTScreenshot;
+	}
+
 	return (
 		<ProjectContainer>
 			<Tinted>
-				<ProjectImg src={TLNTScreenshot}></ProjectImg>
+				<ProjectImg
+					src={projectScreenshot}
+					alt={`Screenshot of the project ${info.title}`}
+				></ProjectImg>
 			</Tinted>
 			<ProjectDetails>
 				<ColorBar></ColorBar>
