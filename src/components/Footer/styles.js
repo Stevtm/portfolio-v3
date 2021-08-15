@@ -4,7 +4,8 @@ export const FooterContainer = styled.div`
 	/* box model */
 	align-items: center;
 	display: flex;
-	flex-direction: column;
+	flex-direction: row;
+	justify-content: center;
 	padding: 15px 10px;
 	width: 100%;
 
@@ -12,16 +13,11 @@ export const FooterContainer = styled.div`
 	background-color: ${({ theme }) => theme.pastelPurple.lighter};
 `;
 
-export const Links = styled.div`
-	/* box model */
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	padding: 0 0;
-`;
-
 export const Link = styled.a`
 	/* box model */
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 	padding: 0 10px;
 
 	/* typography */
@@ -35,16 +31,7 @@ export const Link = styled.a`
 		transition: 0.2s all ease-in-out;
 
 		&:hover {
-			color: white;
+			color: ${({ theme }) => theme.pastelPurple.dark};
 		}
 	}
-`;
-
-export const Reference = styled.p`
-	/* box model */
-	margin: 0;
-	padding: 4px 0;
-
-	/* typography */
-	color: black;
 `;

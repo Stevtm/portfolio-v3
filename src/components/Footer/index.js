@@ -1,12 +1,18 @@
 import React from "react";
 
+// import github logo
+import { FaGithub } from "react-icons/fa";
+
 // import styled components
-import { FooterContainer, Reference } from "./styles";
+import { FooterContainer, Link } from "./styles";
 
 const Footer = () => {
 	return (
 		<FooterContainer>
-			<Reference>© Steven Maddison 2021</Reference>
+			<Link href="https://github.com/Stevtm/portfolio-v3" target="_blank">
+				<FaGithub></FaGithub>
+			</Link>
+			Designed & Built <br></br>by Steven Maddison
 		</FooterContainer>
 	);
 };
