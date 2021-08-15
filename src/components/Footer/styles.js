@@ -40,7 +40,7 @@ export const Link = styled.a`
 	}
 `;
 
-export const Copyright = styled.p`
+export const Reference = styled.p`
 	/* box model */
 	margin: 0;
 	padding: 4px 0;

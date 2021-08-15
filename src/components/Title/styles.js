@@ -61,3 +61,37 @@ export const Motto = styled.h2`
 	font-weight: 400;
 	line-height: 2.25rem;
 `;
+
+export const Links = styled.div`
+	/* box model */
+	position: relative;
+	top: 25%;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	padding: 0 0;
+
+	@media (min-width: 671px) {
+		top: 30%;
+	}
+`;
+
+export const Link = styled.a`
+	/* box model */
+	padding: 0 10px;
+
+	/* typography */
+	font-size: 2.5rem;
+
+	svg {
+		/* typography */
+		color: black;
+
+		/* visual decorations */
+		transition: 0.2s all ease-in-out;
+
+		&:hover {
+			color: ${({ theme }) => theme.pastelGreen.dark};
+		}
+	}
+`;
