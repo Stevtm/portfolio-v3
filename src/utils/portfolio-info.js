@@ -44,7 +44,7 @@ export const portfolioInfo = [
 	{
 		id: 4,
 		title: "Tech Blog",
-		desc: "CMS-style blod site that allows users to create accounts, create, modify, and delete their own blog posts, and comment on existing blog posts.",
+		desc: "CMS-style blog site that allows users to create accounts, create, modify, and delete blog posts, and comment on existing posts.",
 		tools: [
 			{ id: 1, name: "Sequelize" },
 			{ id: 2, name: "Handlebars" },

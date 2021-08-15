@@ -60,7 +60,7 @@ const Project = ({ info }) => {
 
 	return (
 		<ProjectContainer>
-			<Tinted>
+			<Tinted href={link} target="_blank">
 				<ProjectImg
 					src={projectScreenshot}
 					alt={`Screenshot of the project ${info.title}`}
