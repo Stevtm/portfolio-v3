@@ -17,12 +17,13 @@ export const ProjectContainer = styled.article`
 
 export const Tinted = styled.a`
 	/* box model */
+	border: none;
 	border-radius: 10px 10px 0px 0px;
 	position: relative;
 	float: left;
 	height: 150px;
 	width: 100%;
-	z-index: 2;
+
 	/* visual decorations */
 	cursor: pointer;
 
@@ -36,11 +37,12 @@ export const Tinted = styled.a`
 		left: 0;
 		right: 0;
 		background: rgba(112, 143, 121, 0.7);
-		transition: background 0.3s linear;
+		transition: all 0.3s linear;
 	}
 
 	:hover:before {
 		background: none;
+		border: 2px solid ${({ theme }) => theme.pastelGreen.dark};
 	}
 
 	@media (min-width: 1281px) {
@@ -49,6 +51,7 @@ export const Tinted = styled.a`
 		grid-column: 1/4;
 		grid-row: 1;
 		height: 100%;
+		z-index: 2;
 
 		:before {
 			border-radius: 10px;
