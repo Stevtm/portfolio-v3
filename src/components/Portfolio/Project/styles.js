@@ -1,10 +1,10 @@
 import styled from "styled-components";
+import TLNTScreenshot from "../../../assets/images/TLNT-min.png";
 
-export const ProjectContainer = styled.article`
+export const ProjectContainer = styled.div`
 	/* box model */
-	align-items: center;
 	display: grid;
-	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
 	padding: 5px;
 	margin: 20px 0;
 	width: 100%;
@@ -12,12 +12,10 @@ export const ProjectContainer = styled.article`
 
 export const Tinted = styled.div`
 	/* box model */
-	border-radius: 10px;
-	grid-column: 1/4;
+	grid-column: 1/3;
 	grid-row: 1;
 	position: relative;
 	float: left;
-	height: 100%;
 	width: 100%;
 	z-index: 2;
 
@@ -25,7 +23,6 @@ export const Tinted = styled.div`
 	cursor: pointer;
 
 	:before {
-		border-radius: 10px;
 		content: "";
 		display: block;
 		position: absolute;
@@ -33,8 +30,14 @@ export const Tinted = styled.div`
 		bottom: 0;
 		left: 0;
 		right: 0;
+<<<<<<< HEAD
 		background: rgba(112, 143, 121, 0.7);
 		transition: all 0.3s linear;
+=======
+		background-color: ${({ theme }) => theme.pastelGreen.dark};
+		opacity: 0.7;
+		transition: background 0.3s linear;
+>>>>>>> parent of 39d1230 (reverse project image and description for even children)
 	}
 
 	:hover:before {
@@ -45,7 +48,6 @@ export const Tinted = styled.div`
 
 export const ProjectImg = styled.img`
 	/* box model */
-	border-radius: 10px;
 	width: 100%;
 	height: 100%;
 
@@ -56,7 +58,7 @@ export const ProjectImg = styled.img`
 export const ProjectDetails = styled.div`
 	/* box model */
 	border-radius: 0 0 10px 10px;
-	grid-column: 3 / 6;
+	grid-column: 2 / 5;
 	grid-row: 1;
 	margin: 30px 0;
 	z-index: 3;
@@ -119,8 +121,7 @@ export const ProjectTools = styled.div`
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
-	margin: 0;
-	margin-top: 5px;
+	margin: 10px 0;
 
 	/* visual decorations */
 `;
