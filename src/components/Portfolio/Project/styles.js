@@ -1,15 +1,15 @@
 import styled from "styled-components";
-import TLNTScreenshot from "../../../assets/images/TLNT-min.png";
 
 export const ProjectContainer = styled.div`
 	/* box model */
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr 1fr;
-	padding: 5px;
+	display: flex;
+	flex-direction: column;
+	padding: 5px 0;
 	margin: 20px 0;
 	width: 100%;
 `;
 
+<<<<<<< HEAD
 export const Tinted = styled.div`
 	/* box model */
 	grid-column: 1/3;
@@ -67,6 +67,8 @@ export const ProjectDetails = styled.div`
 	background-color: ${({ theme }) => theme.pastelGreen.lighter};
 `;
 
+=======
+>>>>>>> parent of 014172a (create framework for desktop portfolio section with images)
 export const ProjectHeader = styled.div`
 	/* box model */
 	align-items: center;
@@ -77,7 +79,7 @@ export const ProjectHeader = styled.div`
 	margin: 0;
 `;
 
-export const ProjectTitle = styled.h2`
+export const ProjectTitle = styled.h1`
 	/* box model */
 	margin: 0;
 
@@ -97,19 +99,21 @@ export const ColorBar = styled.div`
 	margin-right: 10px;
 
 	/* visual decorations */
-	background-color: ${({ theme }) => theme.pastelGreen.dark};
+	background-color: ${({ theme }) => theme.pastelGreen.DEFAULT};
 `;
 
 export const ProjectContent = styled.div`
 	/* box model */
 	padding: 10px;
-	padding-top: 0px;
 	border-radius: 0 0 10px 10px;
+
+	/* visual decorations */
+	background-color: white;
 `;
 
 export const ProjectDesc = styled.p`
 	/* box model */
-	margin: 0;
+	margin: 10px 0;
 
 	/* typography */
 	font-size: 1.125rem;
