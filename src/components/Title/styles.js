@@ -8,8 +8,9 @@ export const TitleSection = styled.section`
 	flex-direction: column;
 	height: 98vh;
 	/* justify-content: flex-end when the clock div is in place */
-	justify-content: space-between;
+	justify-content: center;
 	padding: 0 20px;
+	/* margin: 0 20px; */
 	background-image: url(${HexagonBackground});
 
 	@media (min-width: 671px) {
@@ -63,16 +64,16 @@ export const Motto = styled.h2`
 
 export const Links = styled.div`
 	/* box model */
-	/* position: relative;
-	top: 25%; */
+	position: relative;
+	top: 25%;
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
 	padding: 0 0;
-	margin-bottom: 20px;
+	z-index: auto;
 
 	@media (min-width: 671px) {
-		/* top: 30%; */
+		top: 30%;
 	}
 `;
 
