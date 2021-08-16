@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.1248238f.chunk.css",
-    "main.js": "/static/js/main.56b09497.chunk.js",
-    "main.js.map": "/static/js/main.56b09497.chunk.js.map",
+    "main.js": "/static/js/main.35156c8d.chunk.js",
+    "main.js.map": "/static/js/main.35156c8d.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.afc3375e.js",
     "runtime-main.js.map": "/static/js/runtime-main.afc3375e.js.map",
     "static/js/2.ee12363a.chunk.js": "/static/js/2.ee12363a.chunk.js",
@@ -12,14 +12,8 @@
     "index.html": "/index.html",
     "static/css/main.1248238f.chunk.css.map": "/static/css/main.1248238f.chunk.css.map",
     "static/js/2.ee12363a.chunk.js.LICENSE.txt": "/static/js/2.ee12363a.chunk.js.LICENSE.txt",
-    "static/media/AGO-min.c3ddfa8d.png": "/static/media/AGO-min.c3ddfa8d.png",
-    "static/media/BudgetTracker-min.ddf4ea97.png": "/static/media/BudgetTracker-min.ddf4ea97.png",
     "static/media/Logo.a677b6e8.svg": "/static/media/Logo.a677b6e8.svg",
-    "static/media/NoteTaker-min.3812b7d6.png": "/static/media/NoteTaker-min.3812b7d6.png",
-    "static/media/RTQuiz-min.177b9586.png": "/static/media/RTQuiz-min.177b9586.png",
     "static/media/Resume_08Aug2021.8553c74f.pdf": "/static/media/Resume_08Aug2021.8553c74f.pdf",
-    "static/media/TLNT-min.06242d1a.png": "/static/media/TLNT-min.06242d1a.png",
-    "static/media/TechBlog-min.0a43d4fb.png": "/static/media/TechBlog-min.0a43d4fb.png",
     "static/media/pattern_hexagon-min.f33e30d3.png": "/static/media/pattern_hexagon-min.f33e30d3.png",
     "static/media/recent-pic.c7b61ccc.jpeg": "/static/media/recent-pic.c7b61ccc.jpeg"
   },
@@ -27,6 +21,6 @@
     "static/js/runtime-main.afc3375e.js",
     "static/js/2.ee12363a.chunk.js",
     "static/css/main.1248238f.chunk.css",
-    "static/js/main.56b09497.chunk.js"
+    "static/js/main.35156c8d.chunk.js"
   ]
 }
