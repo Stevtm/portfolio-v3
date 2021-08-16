@@ -15,14 +15,12 @@ export const PortfolioSection = styled.section`
 	/* visual decorations */
 	background-color: ${({ theme }) => theme.pastelGreen.lighter};
 
-	@media (min-width: 1281px) {
-		& > :nth-child(2) > :nth-child(even) > :nth-child(1) {
-			grid-column: 3 / 6;
-		}
+	& > :nth-child(2) > :nth-child(even) > :nth-child(1) {
+		grid-column: 3 / 6;
+	}
 
-		& > :nth-child(2) > :nth-child(even) > :nth-child(2) {
-			grid-column: 1 / 4;
-		}
+	& > :nth-child(2) > :nth-child(even) > :nth-child(2) {
+		grid-column: 1 / 4;
 	}
 `;
 
