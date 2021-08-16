@@ -8,8 +8,8 @@ import {
 	Anchor,
 	PortfolioHeader,
 	PortfolioSection,
+	ColorBar,
 	HeaderText,
-	PortfolioContent,
 } from "./styles";
 
 const Portfolio = () => {
@@ -18,13 +18,12 @@ const Portfolio = () => {
 			<Anchor id={"portfolio"}></Anchor>
 			<PortfolioSection>
 				<PortfolioHeader>
+					<ColorBar></ColorBar>
 					<HeaderText>Portfolio</HeaderText>
 				</PortfolioHeader>
-				<PortfolioContent>
-					{portfolioInfo.map((info) => {
-						return <Project info={info} key={info.id}></Project>;
-					})}
-				</PortfolioContent>
+				{portfolioInfo.map((info) => {
+					return <Project info={info} key={info.id}></Project>;
+				})}
 			</PortfolioSection>
 		</>
 	);

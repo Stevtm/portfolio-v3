@@ -1,101 +1,12 @@
 import styled from "styled-components";
 
-export const ProjectContainer = styled.article`
+export const ProjectContainer = styled.div`
 	/* box model */
-	align-items: center;
 	display: flex;
 	flex-direction: column;
-	padding: 5px;
+	padding: 5px 0;
 	margin: 20px 0;
 	width: 100%;
-
-	@media (min-width: 1281px) {
-		display: grid;
-		grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-	}
-`;
-
-export const Tinted = styled.a`
-	/* box model */
-	border: none;
-	border-radius: 10px 10px 0px 0px;
-	position: relative;
-	float: left;
-	height: 150px;
-	width: 100%;
-
-	/* visual decorations */
-	cursor: pointer;
-
-	:before {
-		border-radius: 10px 10px 0px 0px;
-		content: "";
-		display: block;
-		position: absolute;
-		top: 0;
-		bottom: 0;
-		left: 0;
-		right: 0;
-		background: rgba(112, 143, 121, 0.7);
-		transition: all 0.3s linear;
-	}
-
-	:hover:before {
-		background: none;
-		border: 2px solid ${({ theme }) => theme.pastelGreen.dark};
-	}
-
-	@media (min-width: 1281px) {
-		/* box model */
-		border-radius: 10px;
-		grid-column: 1/4;
-		grid-row: 1;
-		height: 100%;
-		z-index: 2;
-
-		:before {
-			border-radius: 10px;
-			content: "";
-			display: block;
-			position: absolute;
-			top: 0;
-			bottom: 0;
-			left: 0;
-			right: 0;
-			background: rgba(112, 143, 121, 0.7);
-			transition: background 0.3s linear;
-		}
-	}
-`;
-
-export const ProjectImg = styled.img`
-	/* box model */
-	border-radius: 10px 10px 0px 0px;
-	width: 100%;
-	height: 100%;
-
-	/* visual decorations */
-	object-fit: cover;
-
-	@media (min-width: 1281px) {
-		border-radius: 10px;
-	}
-`;
-
-export const ProjectDetails = styled.div`
-	/* box model */
-	border-radius: 0 0 10px 10px;
-	margin: 0;
-
-	/* visual decorations */
-	background-color: ${({ theme }) => theme.pastelGreen.lighter};
-
-	@media (min-width: 1281px) {
-		grid-column: 3 / 6;
-		grid-row: 1;
-		margin: 30px 0;
-		z-index: 3;
-	}
 `;
 
 export const ProjectHeader = styled.div`
@@ -108,50 +19,41 @@ export const ProjectHeader = styled.div`
 	margin: 0;
 `;
 
-export const ProjectTitle = styled.h2`
+export const ProjectTitle = styled.h1`
 	/* box model */
 	margin: 0;
-	max-width: calc(100%-140px);
-
 	/* typography */
-	font-size: 1.25rem;
-	line-height: 1.75rem;
+	font-size: 1.5rem;
 	font-weight: 500;
 	font-size: 1.875rem;
+	line-height: 2.25rem;
 `;
 
-export const Icons = styled.div`
-	/* box model */
-	width: 140px;
-
-	/* typoghraphy */
-	text-align: right;
-`;
+export const Icons = styled.div``;
 
 export const ColorBar = styled.div`
 	/* box model */
 	height: 10px;
 	width: 100%;
 	margin-right: 10px;
-
 	/* visual decorations */
-	background-color: ${({ theme }) => theme.pastelGreen.dark};
+	background-color: ${({ theme }) => theme.pastelGreen.DEFAULT};
 `;
 
 export const ProjectContent = styled.div`
 	/* box model */
 	padding: 10px;
-	padding-top: 0px;
 	border-radius: 0 0 10px 10px;
+	/* visual decorations */
+	background-color: white;
 `;
 
 export const ProjectDesc = styled.p`
 	/* box model */
-	margin: 0;
-
+	margin: 10px 0;
 	/* typography */
-	font-size: 1rem;
-	line-height: 1.5rem;
+	font-size: 1.125rem;
+	line-height: 1.75rem;
 `;
 
 export const ProjectTools = styled.div`
@@ -159,27 +61,23 @@ export const ProjectTools = styled.div`
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
-	margin: 0;
-	margin-top: 5px;
+	margin: 10px 0;
+	/* visual decorations */
 `;
 
 export const Link = styled.a`
 	/* box model */
 	margin: 0 5px;
-
 	/* typography */
 	color: black;
-
 	svg {
 		/* typography */
 		font-size: 30px;
-
 		/* visual decorations */
 		transition: 0.2s all ease-in-out;
-
 		&:hover {
 			/* typography */
-			color: ${({ theme }) => theme.pastelGreen.DEFAULT};
+			color: white;
 		}
 	}
 `;
