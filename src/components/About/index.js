@@ -1,5 +1,5 @@
 import React from "react";
-import RecentPic from "../../assets/images/recent-pic.jpeg";
+import RecentPic from "../../assets/images/steven-min.png";
 
 // import styled components
 import {
