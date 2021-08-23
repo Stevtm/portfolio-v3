@@ -119,7 +119,26 @@ export const ContactButton = styled.button`
 export const ProfilePic = styled.img`
 	/* box model */
 	border-radius: 40px;
+	object-fit: cover;
+	padding: 0 5px;
 	margin: 10px 5px;
-	width: 80%;
-	max-width: 270px;
+	width: 100%;
+
+	@media (min-width: 1024px) {
+		/* box model */
+		width: 85%;
+	}
+
+	@media (min-width: 1150px) {
+		/* box model */
+		width: 80%;
+		max-width: 400px;
+	}
+
+	@media (min-width: 1281px) {
+		/* box model */
+		height: 250px;
+		width: 40%;
+		max-width: 400px;
+	}
 `;
